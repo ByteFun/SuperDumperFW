@@ -19,6 +19,11 @@ C_DEPS :=
 SUBDIRS := \
 lib/CMSIS/Device/ST/STM32F4xx/Source/Templates \
 lib/STM32F4xx_StdPeriph_Driver/src \
+lib/STM32_USB_Device_Library/Class/hid/src \
+lib/STM32_USB_Device_Library/Core/src \
+lib/STM32_USB_OTG_Driver/src \
+src/dumper \
 src \
+src/usb-hid \
 src/utils \
 

@@ -1,8 +1,6 @@
 // Утилиты
 
-#include "utils.h"
-#include "stm32f4xx.h"
-#include "stddef.h"
+#include "utils/utils.h"
 
 // ============================================================================================
 // CRC32
@@ -53,20 +51,20 @@ __attribute__ ((naked)) void UpdateLEDs(uint32_t DendyLED, uint32_t SegaLED)
 	(	"PUSH	{R0-R12}\n"
 		// R0 - Регистр цвета LED Dendy
 		// R1 - Регистр цвета LED Sega
-        "MOVT	R2, #0x0000\n"			// R2 - Константа установки бита LED в 1
         "MOVW	R2, #0x0004\n"			//
-        "MOVT	R3, #0x0000\n"			// R3 - Константа сброса бита LED в 0
-        "MOVW	R3, #0x0004\n"			//
-        "MOVT	R4, #0x4002\n"			// R4 - Адрес регистра управления портом GPIOB_BSRR
+        "MOVT	R2, #0x0000\n"			// R2 - Константа установки бита LED в 1
+        "MOVW	R3, #0x0000\n"			//
+        "MOVT	R3, #0x0004\n"			// R3 - Константа сброса бита LED в 0
         "MOVW	R4, #0x0418\n"			//
+        "MOVT	R4, #0x4002\n"			// R4 - Адрес регистра управления портом GPIOB_BSRR
 		// R5 - Счетчик бит одного светодиода
 		// R6 - Счетчик задержки
-		"MOVT	R5, #0x0000\n"			// 24 бита за раз
 		"MOVW	R5, #0x0018\n"			//
+		"MOVT	R5, #0x0000\n"			// 24 бита за раз
 		"LoopDendy:\n"					//
 		"STR	R2, [R4, #0]\n"			// Устанавливаем 1
-		"MOVT	R6, #0x0000\n"			// 350ns
 		"MOVW	R6, #0x000E\n"			//
+		"MOVT	R6, #0x0000\n"			// 350ns
 		"WaitDendy0:\n"					// Ждем
 		"NOP\n"							//
 		"SUBS	R6, R6, #1\n"			//
@@ -74,15 +72,15 @@ __attribute__ ((naked)) void UpdateLEDs(uint32_t DendyLED, uint32_t SegaLED)
 		"ANDS	R6, R0, #0x00800000\n"	// Выделим бит
 		"IT		EQ\n"					// Он =0?
 		"STREQ	R3, [R4, #0]\n"			// Да - сбрасываем сигнал
-		"MOVT	R6, #0x0000\n"			// 550ns
 		"MOVW	R6, #0x0016\n"			//
+		"MOVT	R6, #0x0000\n"			// 550ns
 		"WaitDendy1:\n"					// Ждем
 		"NOP\n"							//
 		"SUBS	R6, R6, #1\n"			//
 		"BNE	WaitDendy1\n"			//
 		"STR	R3, [R4, #0]\n"			// Сбрасываем сигнал
-		"MOVT	R6, #0x0000\n"			// 350ns
 		"MOVW	R6, #0x000E\n"			//
+		"MOVT	R6, #0x0000\n"			// 350ns
 		"WaitDendy2:\n"					// Ждем
 		"NOP\n"							//
 		"SUBS	R6, R6, #1\n"			//
@@ -90,12 +88,12 @@ __attribute__ ((naked)) void UpdateLEDs(uint32_t DendyLED, uint32_t SegaLED)
 		"LSL	R0, R0, #1\n"			// Следующий бит
 		"SUBS	R5, R5, #1\n"			// Счетчик бит
 		"BNE	LoopDendy\n"			// Крутимся
-		"MOVT	R5, #0x0000\n"			// 24 бита за раз
 		"MOVW	R5, #0x0018\n"			//
+		"MOVT	R5, #0x0000\n"			// 24 бита за раз
 		"LoopSega:\n"					//
 		"STR	R2, [R4, #0]\n"			// Устанавливаем 1
-		"MOVT	R6, #0x0000\n"			// 350ns
 		"MOVW	R6, #0x000E\n"			//
+		"MOVT	R6, #0x0000\n"			// 350ns
 		"WaitSega0:\n"					// Ждем
 		"NOP\n"							//
 		"SUBS	R6, R6, #1\n"			//
@@ -103,15 +101,15 @@ __attribute__ ((naked)) void UpdateLEDs(uint32_t DendyLED, uint32_t SegaLED)
 		"ANDS	R6, R1, #0x00800000\n"	// Выделим бит
 		"IT		EQ\n"					// Он =0?
 		"STREQ	R3, [R4, #0]\n"			// Да - сбрасываем сигнал
-		"MOVT	R6, #0x0000\n"			// 550ns
 		"MOVW	R6, #0x0016\n"			//
+		"MOVT	R6, #0x0000\n"			// 550ns
 		"WaitSega1:\n"					// Ждем
 		"NOP\n"							//
 		"SUBS	R6, R6, #1\n"			//
 		"BNE	WaitSega1\n"			//
 		"STR	R3, [R4, #0]\n"			// Сбрасываем сигнал
-		"MOVT	R6, #0x0000\n"			// 350ns
 		"MOVW	R6, #0x000E\n"			//
+		"MOVT	R6, #0x0000\n"			// 350ns
 		"WaitSega2:\n"					// Ждем
 		"NOP\n"							//
 		"SUBS	R6, R6, #1\n"			//
@@ -123,3 +121,79 @@ __attribute__ ((naked)) void UpdateLEDs(uint32_t DendyLED, uint32_t SegaLED)
 		"BX		LR\n"					// Выход
 	);
 }
+
+//------------------------------------------------------------------------------
+// Прием пакета по USB
+/*procedure USB_Read_Command(Buf:^byte;Size:word);
+var Cnt,Sum,Sz:byte;
+    Loaded:word;
+    Ans : ^byte;
+    Cont,Copy:boolean;
+begin
+     Sz := 0; Ans := Buf; Loaded := 0; Cont := false; Copy := false;
+     // Ожидаем приема
+     while true do begin
+       // Пытаемся загрузить
+       Sz := HID_Rx(@HID_Rx_Buf[0]);
+       // Загрузилось?
+       if (Sz > 0) and ((HID_Rx_Buf[0]+HID_Rx_Buf[1]) and $FF = 0) and ((HID_Rx_Buf[1] and $3F) <> 0) then begin
+          // Есть данные и синхра, проверяем контрольку
+          Sz := HID_Rx_Buf[1]; Sum := 0;
+          for Cnt := 0 to (Sz and $3F)-1 do Sum := Sum + HID_Rx_Buf[Cnt+2];
+          // Если сумма сошлась - обрабатываем пакет
+          if Sum = HID_Rx_Buf[(Sz and $3F)+2] then begin
+             // Логика склейки пакетов
+             if not Cont then begin
+                // Начинается прием
+                if ((Sz and $C0) = $00) or ((Sz and $C0) = $C0) then begin
+                   Cont := true; Copy := true;
+                   end else begin
+                   Ans := Buf; Loaded := 0; Copy := false;
+                   end;
+                end else begin
+                // Продолжается прием
+                if ((Sz and $C0) = $40) or ((Sz and $C0) = $C0) then Copy := true
+                   else begin Ans := Buf; Loaded := 0; Cont := false; Copy := false; end;
+                end;
+             // Перенос данных
+             if Copy then
+                // Копируем данные
+                for Cnt := 0 to (Sz and $3F)-1 do
+                    if Loaded <= Size then begin
+                       Ans^ := HID_Rx_Buf[Cnt+2]; inc(Ans); inc(Loaded);
+                       end;
+             // Условие выхода
+             if (Loaded >= Size) or ((Sz and $C0) = $C0) then break;
+             end;
+          end;
+       end;
+end;
+// Передача пакета по USB
+procedure USB_Send_Answer(Buf:^byte;Size:dword);
+var Cnt,Sum,Sz:byte;
+    Send:word;
+begin
+     Send := 0;
+     if Size > 0 then
+        // Размер корректен, работаем
+        while Send < Size do begin
+          // Ждем предыдущую операцию
+          while WR_Len <> 0 do Delay_us(100);
+          // Размер текущего пакета
+          if (Size-Send) >= 61 then Sz := 61 else Sz := Size - Send;
+          // Заполняем пакет
+          if (Size > 61) and (Send = 0) then HID_Tx_Buf[1] := (Sz and $3F)
+             else if ((Size-Send) > 61) and (Send > 0) then HID_Tx_Buf[1] := (Sz and $3F) or $40
+                                                       else HID_Tx_Buf[1] := Sz or $C0;
+          HID_Tx_Buf[0] := ($100-HID_Tx_Buf[1]) and $FF; Sum := 0;
+          for Cnt := 0 to Sz-1 do begin
+              HID_Tx_Buf[Cnt+2] := Buf^; Sum := Sum + Buf^; inc(Buf); inc(Send);
+              end;
+          HID_Tx_Buf[Sz+2] := Sum;
+          // Посылаем
+//          HID_Tx(@HID_Tx_Buf[0],Sz+3);
+          WR_Len := 1;
+          USB_EP_Transmit(@hpcd,$81,@HID_Tx_Buf[0],EP_Size);
+        end;
+end;
+*/
