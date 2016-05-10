@@ -9,6 +9,9 @@
 // Типы
 
 // Процедуры и функции
+
+// Задержка
+__attribute__ ((naked)) void Delay(uint32_t Time);
 // Вычисляем CRC32
 void Calc_CRC32(uint8_t Dat, uint32_t *CRC32);
 // Управляем лампочками

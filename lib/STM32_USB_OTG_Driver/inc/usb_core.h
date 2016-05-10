@@ -397,6 +397,7 @@ void         USB_OTG_ActiveRemoteWakeup(USB_OTG_CORE_HANDLE *pdev);
 void         USB_OTG_UngateClock(USB_OTG_CORE_HANDLE *pdev);
 void         USB_OTG_StopDevice(USB_OTG_CORE_HANDLE *pdev);
 void         USB_OTG_SetEPStatus (USB_OTG_CORE_HANDLE *pdev , USB_OTG_EP *ep , uint32_t Status);
+uint32_t     USB_OTG_GetEPEmpty(USB_OTG_CORE_HANDLE *pdev ,USB_OTG_EP *ep);
 uint32_t     USB_OTG_GetEPStatus(USB_OTG_CORE_HANDLE *pdev ,USB_OTG_EP *ep);
 #endif
 /**

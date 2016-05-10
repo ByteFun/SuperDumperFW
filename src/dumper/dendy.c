@@ -2,21 +2,6 @@
 
 #include "dumper/dendy.h"
 
-// Delay()
-__attribute__ ((naked)) void Delay(uint32_t Time)
-{
-	__asm volatile
-	(	"PUSH	{R0}\n"
-		"NOP\n"
-		"Delay_Loop:\n"
-		"SUBS	R0, R0, #1\n"
-		"BNE	Delay_Loop\n"
-		"NOP\n"
-		"NOP\n"
-		"POP	{R0}\n"
-		"BX		LR\n"
-	);
-}
 // Отключение режима Денди
 void Dendy_Off()
 {	// Параметры
@@ -76,8 +61,8 @@ __attribute__ ((naked)) void Read_PRG(uint8_t *PBuf, uint32_t Start, uint32_t Si
 		// R4 = GPIOE_ODR (Для вывода адреса)
 		"MOVW	R4, #0x1014\n"
 		"MOVT	R4, #0x4002\n"
-        // R5 = GPIOD_ODR (Для ввода данных)
-		"MOVW	R5, #0x0C14\n"
+        // R5 = GPIOD_IDR (Для ввода данных)
+		"MOVW	R5, #0x0C10\n"
 		"MOVT	R5, #0x4002\n"
 		// R6 = Маска $0000FFFF
 		"MOVW	R6, #0xFFFF\n"
@@ -188,7 +173,7 @@ __attribute__ ((naked)) void Write_PRG(uint8_t *PBuf, uint32_t Start, uint32_t S
 		// R5 = GPIOE_ODR (Для вывода адреса)
 		"MOVW	R5, #0x1014\n"
 		"MOVT	R5, #0x4002\n"
-		// R6 = GPIOD_ODR (Для ввода данных)
+		// R6 = GPIOD_ODR (Для вывода данных)
 		"MOVW	R6, #0x0C14\n"
 		"MOVT	R6, #0x4002\n"
 		// R7 = Маска $0000FFFF
@@ -236,6 +221,7 @@ __attribute__ ((naked)) void Write_PRG(uint8_t *PBuf, uint32_t Start, uint32_t S
 		// Считываем новые данные
 		"ADD	R0, R0, #1\n"
 		"LDRB	R10, [R0, #0]\n"
+		"AND	R10, R10, 0x00FF\n"
 		// Ждем F2 = 0
 		"Write_PRG_LWt1:\n"
 		"LDR	R11, [R3, #0]\n"

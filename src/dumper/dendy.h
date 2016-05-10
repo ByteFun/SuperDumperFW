@@ -31,9 +31,9 @@
 #define CHR_PWR_Off()	GPIOA->BSRRL = GPIO_Pin_4;		// Деактивируем CHR WR
 #define CHR_nPA13_On()	GPIOA->BSRRL = GPIO_Pin_5;		// CHR nPA13 = 0
 #define CHR_nPA13_Off()	GPIOA->BSRRH = GPIO_Pin_5;		// CHR nPA13 = 1
-#define PRG_IRQ_In()	(GPIOA->IDR & GPIO_Pin_6);		// Чтение бита PRG IRQ
-#define CHR_VA10_In()	(GPIOA->IDR & GPIO_Pin_7);		// Чтение бита CHR VA10 (мирроринг)
-#define CHR_VRAM_In()	(GPIOA->IDR & GPIO_Pin_8);		// Чтение бита CHR VRAM (управление CIRAM)
+#define PRG_IRQ_In()	(GPIOA->IDR & GPIO_Pin_6)		// Чтение бита PRG IRQ
+#define CHR_VA10_In()	(GPIOA->IDR & GPIO_Pin_7)		// Чтение бита CHR VA10 (мирроринг)
+#define CHR_VRAM_In()	(GPIOA->IDR & GPIO_Pin_8)		// Чтение бита CHR VRAM (управление CIRAM)
 
 // Отключить режим денди
 void Dendy_Off();

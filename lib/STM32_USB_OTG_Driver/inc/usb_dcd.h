@@ -138,6 +138,9 @@ uint32_t    DCD_EP_Flush (USB_OTG_CORE_HANDLE *pdev,
                                uint8_t epnum);
 uint32_t    DCD_Handle_ISR(USB_OTG_CORE_HANDLE *pdev);
 
+uint32_t DCD_EP_Empty(USB_OTG_CORE_HANDLE *pdev,
+		                 uint8_t epnum);
+
 uint32_t DCD_GetEPStatus(USB_OTG_CORE_HANDLE *pdev ,
                          uint8_t epnum);
 

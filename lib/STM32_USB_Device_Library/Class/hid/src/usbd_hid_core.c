@@ -50,10 +50,12 @@
 #include "usbd_hid_core.h"
 #include "usb-hid/usbd_desc.h"
 #include "usbd_req.h"
+#include "usb-hid/link.h"
 
 //#include "main.h"
 
-volatile uint8_t Control_buf[ HID_OUT_PACKET ];
+volatile uint8_t USB_Incoming[ HID_OUT_PACKET ];
+
 
 #if BOOTLOADER_MODE
 extern volatile struct shared  shared __attribute__((section(".ram_globals")));
@@ -306,7 +308,7 @@ uint8_t USBD_HID_Init(void *pdev, uint8_t cfgidx)
     /*Receive Data*/
     DCD_EP_PrepareRx( pdev,
                       HID_CONTROL_OUT_EP,
-                      (uint8_t *) Control_buf,
+                      (uint8_t *) USB_Incoming,
                       HID_OUT_PACKET );
 
     return USBD_OK;
@@ -444,6 +446,21 @@ uint8_t USBD_HID_SendReport     (USB_OTG_CORE_HANDLE  *pdev,
     return USBD_OK;
 }
 
+// Получаем статус EP
+uint32_t USBD_HID_Empty (USB_OTG_CORE_HANDLE  *pdev)
+{	// Переменная
+	uint32_t Res;
+	if ( pdev->dev.device_status == USB_OTG_CONFIGURED )
+	{
+		Res = DCD_EP_Empty( pdev, HID_CONTROL_IN_EP );
+	}
+	else
+	{
+		Res = 0x00000000;
+	}
+	return Res;
+}
+
 /**
   * @brief  USBD_HID_GetCfgDesc 
   *         return configuration descriptor
@@ -475,26 +492,28 @@ uint8_t  USBD_HID_DataIn (void  *pdev, uint8_t epnum)
 
 uint8_t  USBD_HID_DataOut (void  *pdev, uint8_t epnum)
 {
-
-    USB_OTG_CORE_HANDLE  *dev = (USB_OTG_CORE_HANDLE *)pdev;
-    USB_OTG_EP *ep = &dev->dev.out_ep[epnum & 0x7F];
-    uint32_t count = ep->xfer_count;
-
+	USB_OTG_CORE_HANDLE  *dev = (USB_OTG_CORE_HANDLE *)pdev;
+	USB_OTG_EP *ep = &dev->dev.out_ep[epnum & 0x7F];
+	uint32_t count = ep->xfer_count;
+	uint8_t Cnt, Sum;
+    //
     if( epnum == HID_CONTROL_OUT_EP )
-    {
-        uint8_t ok = 0;
-
-		ok  = Control_buf[ 0 ] == 0x05;
-		ok &= Control_buf[ 1 ] == 0xBB;
-		ok &= Control_buf[ 2 ] == 0x00;
-		ok &= Control_buf[ 3 ] == 0x00;
-		ok &= Control_buf[ 4 ] == 0x33;
-
-        // подготовка конечной точки к приёму следующего пакета
+    {	// Анализируем пакет
+    	if ((((USB_Incoming[0]+USB_Incoming[1]) & 0xFF) == 0) && ((USB_Incoming[1] & 0x3F) > 0) && ((USB_Incoming[1] & 0x3F) < 61))
+    	{	// Синхра найдена, вычисляем контрольку
+    		Sum = 0; for (Cnt = 0; Cnt < (USB_Incoming[1] & 0x3F); Cnt++) { Sum = Sum + USB_Incoming[Cnt+2]; }
+    		// Сверяем
+    		if (((USB_Incoming[(USB_Incoming[1] & 0x3F)+2]) == Sum) && (USB_Rx[0] == 0))
+    		{	// Пакет верен, копируем
+    			for (Cnt = 0;Cnt < (USB_Incoming[1] & 0x3F); Cnt++) { USB_Rx[Cnt+1] = USB_Incoming[Cnt+2]; }
+    			USB_Rx[0] = USB_Incoming[1];
+    		}
+    	}
+        // Подготовка конечной точки к приёму следующего пакета
         // от хоста
         DCD_EP_PrepareRx( pdev,
                           HID_CONTROL_OUT_EP,
-                          (uint8_t *) Control_buf,
+                          (uint8_t *) USB_Incoming,
                           HID_OUT_PACKET );
 
 //#if BOOTLOADER_MODE

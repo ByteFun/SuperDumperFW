@@ -103,6 +103,9 @@ uint8_t USBD_HID_SendReport (USB_OTG_CORE_HANDLE  *pdev,
                                  uint8_t *report,
                                  uint16_t len);
 
+// Получаем статус EP
+uint32_t USBD_HID_Empty (USB_OTG_CORE_HANDLE  *pdev);
+
 uint32_t USBD_HID_GetPollingInterval (USB_OTG_CORE_HANDLE *pdev);
 
 /**

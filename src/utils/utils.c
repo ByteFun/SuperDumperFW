@@ -2,6 +2,22 @@
 
 #include "utils/utils.h"
 
+// Delay()
+__attribute__ ((naked)) void Delay(uint32_t Time)
+{
+	__asm volatile
+	(	"PUSH	{R0}\n"
+		"NOP\n"
+		"Delay_Loop:\n"
+		"SUBS	R0, R0, #1\n"
+		"BNE	Delay_Loop\n"
+		"NOP\n"
+		"NOP\n"
+		"POP	{R0}\n"
+		"BX		LR\n"
+	);
+}
+
 // ============================================================================================
 // CRC32
 // ============================================================================================
@@ -122,78 +138,3 @@ __attribute__ ((naked)) void UpdateLEDs(uint32_t DendyLED, uint32_t SegaLED)
 	);
 }
 
-//------------------------------------------------------------------------------
-// Прием пакета по USB
-/*procedure USB_Read_Command(Buf:^byte;Size:word);
-var Cnt,Sum,Sz:byte;
-    Loaded:word;
-    Ans : ^byte;
-    Cont,Copy:boolean;
-begin
-     Sz := 0; Ans := Buf; Loaded := 0; Cont := false; Copy := false;
-     // Ожидаем приема
-     while true do begin
-       // Пытаемся загрузить
-       Sz := HID_Rx(@HID_Rx_Buf[0]);
-       // Загрузилось?
-       if (Sz > 0) and ((HID_Rx_Buf[0]+HID_Rx_Buf[1]) and $FF = 0) and ((HID_Rx_Buf[1] and $3F) <> 0) then begin
-          // Есть данные и синхра, проверяем контрольку
-          Sz := HID_Rx_Buf[1]; Sum := 0;
-          for Cnt := 0 to (Sz and $3F)-1 do Sum := Sum + HID_Rx_Buf[Cnt+2];
-          // Если сумма сошлась - обрабатываем пакет
-          if Sum = HID_Rx_Buf[(Sz and $3F)+2] then begin
-             // Логика склейки пакетов
-             if not Cont then begin
-                // Начинается прием
-                if ((Sz and $C0) = $00) or ((Sz and $C0) = $C0) then begin
-                   Cont := true; Copy := true;
-                   end else begin
-                   Ans := Buf; Loaded := 0; Copy := false;
-                   end;
-                end else begin
-                // Продолжается прием
-                if ((Sz and $C0) = $40) or ((Sz and $C0) = $C0) then Copy := true
-                   else begin Ans := Buf; Loaded := 0; Cont := false; Copy := false; end;
-                end;
-             // Перенос данных
-             if Copy then
-                // Копируем данные
-                for Cnt := 0 to (Sz and $3F)-1 do
-                    if Loaded <= Size then begin
-                       Ans^ := HID_Rx_Buf[Cnt+2]; inc(Ans); inc(Loaded);
-                       end;
-             // Условие выхода
-             if (Loaded >= Size) or ((Sz and $C0) = $C0) then break;
-             end;
-          end;
-       end;
-end;
-// Передача пакета по USB
-procedure USB_Send_Answer(Buf:^byte;Size:dword);
-var Cnt,Sum,Sz:byte;
-    Send:word;
-begin
-     Send := 0;
-     if Size > 0 then
-        // Размер корректен, работаем
-        while Send < Size do begin
-          // Ждем предыдущую операцию
-          while WR_Len <> 0 do Delay_us(100);
-          // Размер текущего пакета
-          if (Size-Send) >= 61 then Sz := 61 else Sz := Size - Send;
-          // Заполняем пакет
-          if (Size > 61) and (Send = 0) then HID_Tx_Buf[1] := (Sz and $3F)
-             else if ((Size-Send) > 61) and (Send > 0) then HID_Tx_Buf[1] := (Sz and $3F) or $40
-                                                       else HID_Tx_Buf[1] := Sz or $C0;
-          HID_Tx_Buf[0] := ($100-HID_Tx_Buf[1]) and $FF; Sum := 0;
-          for Cnt := 0 to Sz-1 do begin
-              HID_Tx_Buf[Cnt+2] := Buf^; Sum := Sum + Buf^; inc(Buf); inc(Send);
-              end;
-          HID_Tx_Buf[Sz+2] := Sum;
-          // Посылаем
-//          HID_Tx(@HID_Tx_Buf[0],Sz+3);
-          WR_Len := 1;
-          USB_EP_Transmit(@hpcd,$81,@HID_Tx_Buf[0],EP_Size);
-        end;
-end;
-*/

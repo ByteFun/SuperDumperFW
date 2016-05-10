@@ -2031,6 +2031,31 @@ void USB_OTG_StopDevice(USB_OTG_CORE_HANDLE *pdev)
   USB_OTG_FlushTxFifo(pdev ,  0x10 );  
 }
 
+
+uint32_t USB_OTG_GetEPEmpty(USB_OTG_CORE_HANDLE *pdev ,USB_OTG_EP *ep)
+{
+  USB_OTG_DEPCTL_TypeDef  depctl;
+  __IO uint32_t *depctl_addr;
+  uint32_t Status = 0;
+
+  depctl.d32 = 0;
+  if (ep->is_in == 1)
+  {
+    depctl_addr = &(pdev->regs.INEP_REGS[ep->num]->DIEPCTL);
+    depctl.d32 = USB_OTG_READ_REG32(depctl_addr);
+    if (depctl.b.epena == 0) { Status = 0xFFFFFFFF; }
+  }
+  else
+  {
+    depctl_addr = &(pdev->regs.OUTEP_REGS[ep->num]->DOEPCTL);
+    depctl.d32 = USB_OTG_READ_REG32(depctl_addr);
+    if (depctl.b.epena == 0) { Status = 0xFFFFFFFF; }
+  }
+
+  /* Return the current status */
+  return Status;
+}
+
 /**
 * @brief  returns the EP Status
 * @param  pdev : Selected device

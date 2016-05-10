@@ -413,6 +413,26 @@ void  DCD_DevDisconnect (USB_OTG_CORE_HANDLE *pdev)
 }
 
 
+uint32_t DCD_EP_Empty(USB_OTG_CORE_HANDLE *pdev, uint8_t epnum)
+{
+  USB_OTG_EP *ep;
+  uint32_t Status = 0;
+
+  if ((0x80 & epnum) == 0x80)
+  {
+    ep = &pdev->dev.in_ep[epnum & 0x7F];
+  }
+  else
+  {
+    ep = &pdev->dev.out_ep[epnum];
+  }
+
+  Status = USB_OTG_GetEPEmpty(pdev, ep);
+
+  /* Return the current status */
+  return Status;
+}
+
 /**
 * @brief  returns the EP Status
 * @param  pdev : Selected device
