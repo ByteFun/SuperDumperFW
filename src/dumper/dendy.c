@@ -71,6 +71,7 @@ __attribute__ ((naked)) void Read_PRG(uint8_t *PBuf, uint32_t Start, uint32_t Si
 		"AND	R1, R1, R6, LSL #0\n"
 		"AND	R2, R2, R6, LSL #0\n"
 		// Синхронизируемся
+		"CPSID	f\n"
 		"Read_PRG_Syn0:\n"
 		"LDR	R7, [R3, #0]\n"
 		"ANDS	R7, R7, #1\n"
@@ -110,6 +111,7 @@ __attribute__ ((naked)) void Read_PRG(uint8_t *PBuf, uint32_t Start, uint32_t Si
 		"ANDS	R2, R2, R6, LSL #0\n"
 		"IT		NE\n"
 		"BNE	Read_PRG_Loop\n"
+		"CPSIE	f\n"
 		// Обнулим адрес
 		"MOVW	R6, #0x0000\n"
 		"STR	R6, [R4, #0]\n"
@@ -191,6 +193,7 @@ __attribute__ ((naked)) void Write_PRG(uint8_t *PBuf, uint32_t Start, uint32_t S
 		// Выделим
 		"AND	R1, R1, R7, LSL #0\n"
 		"AND	R2, R2, R7, LSL #0\n"
+		"CPSID	f\n"
 		// Синхронизируемся
 		"Write_PRG_Syn0:\n"
 		"LDR	R11, [R3, #0]\n"
@@ -235,6 +238,7 @@ __attribute__ ((naked)) void Write_PRG(uint8_t *PBuf, uint32_t Start, uint32_t S
 		"BNE	Write_PRG_Loop\n"
 		// Убираем запись
 		"STR	R9, [R4, #0]\n"
+		"CPSIE	f\n"
 		// Обнулим адрес
 		"MOVW	R7, 0x0000\n"
 		"STR	R7, [R5, #0]\n"
