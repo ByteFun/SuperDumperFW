@@ -9,8 +9,8 @@
 
 // USB HID
 USB_OTG_CORE_HANDLE USB_Device_dev;
-volatile uint8_t USB_Rx[ HID_OUT_PACKET ];
-uint8_t USB_Tx[ HID_IN_PACKET ];
+//volatile uint8_t USB_Rx[ HID_OUT_PACKET ];
+//uint8_t USB_Tx[ HID_IN_PACKET ];
 
 // Прием данных по USB
 void USB_Read(uint8_t *Buf, uint32_t Size);

@@ -9,13 +9,13 @@
 #include "misc.h"
 
 #include "usbd_usr.h"
-#include "usbd_hid_core.h"
+#include "usbd_cdc_core.h"
 #include "usb_dcd_int.h"
-#include "usb-hid/usbd_desc.h"
+#include "usb-cdc/usbd_desc.h"
 
 #include "utils/utils.h"
 #include "dumper/dendy.h"
-#include "usb-hid/link.h"
+#include "usb-cdc/link.h"
 
 // Версия прошивки и билда
 const	uint8_t  FWVer     = 0x01;
@@ -37,7 +37,7 @@ uint32_t DendyLED, SegaLED, BSize, Cnt, CRC32, Adr, Size;
 // Прерывание USB
 void OTG_FS_IRQHandler(void)
 {
-	USBD_OTG_ISR_Handler( &USB_Device_dev );
+	USBD_OTG_ISR_Handler( &USB_OTG_dev );
 }
 // Начальная настройка оборудования
 void HWInit()
@@ -123,7 +123,7 @@ void SendError()
 int main(void)
 {	// Инит оборудования
 	HWInit(); Dendy_Off(); DendyLED = clGray; SegaLED = clGray;
-	USBD_Init( &USB_Device_dev, USB_OTG_FS_CORE_ID, &USR_desc, &USBD_HID_cb, &USR_cb );
+	USBD_Init( &USB_OTG_dev, USB_OTG_FS_CORE_ID, &USR_desc, &USBD_CDC_cb, &USR_cb );
 	// Работаем
 	while (1)
 	{	// Обновим лампочки

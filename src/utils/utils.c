@@ -75,6 +75,7 @@ __attribute__ ((naked)) void UpdateLEDs(uint32_t DendyLED, uint32_t SegaLED)
         "MOVT	R4, #0x4002\n"			// R4 - Адрес регистра управления портом GPIOB_BSRR
 		// R5 - Счетчик бит одного светодиода
 		// R6 - Счетчик задержки
+		"CPSID	f\n"
 		"MOVW	R5, #0x0018\n"			//
 		"MOVT	R5, #0x0000\n"			// 24 бита за раз
 		"LoopDendy:\n"					//
@@ -133,6 +134,7 @@ __attribute__ ((naked)) void UpdateLEDs(uint32_t DendyLED, uint32_t SegaLED)
 		"LSL	R1, R1, #1\n"			// Следующий бит
 		"SUBS	R5, R5, #1\n"			// Счетчик бит
 		"BNE	LoopSega\n"				// Крутимся"
+		"CPSIE	f\n"
 		"POP	{R0-R12}\n"				// Восстановим
 		"BX		LR\n"					// Выход
 	);
