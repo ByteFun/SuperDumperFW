@@ -10,7 +10,7 @@
 **  Environment : Atollic TrueSTUDIO(R)
 **                STMicroelectronics STM32F4xx Standard Peripherals Library
 **
-**  Distribution: The file is distributed “as is,” without any warranty
+**  Distribution: The file is distributed ï¿½as is,ï¿½ without any warranty
 **                of any kind.
 **
 **  (c)Copyright Atollic AB.
@@ -105,9 +105,9 @@ void UsageFault_Handler(void)
   * @param  None
   * @retval None
   */
-void SVC_Handler(void)
-{
-}
+//void SVC_Handler(void)
+//{
+//}
 
 /**
   * @brief  This function handles Debug Monitor exception.
@@ -123,18 +123,18 @@ void DebugMon_Handler(void)
   * @param  None
   * @retval None
   */
-void PendSV_Handler(void)
-{
-}
+//void PendSV_Handler(void)
+//{
+//}
 
 /**
   * @brief  This function handles SysTick Handler.
   * @param  None
   * @retval None
   */
-void SysTick_Handler(void)
-{
-}
+//void SysTick_Handler(void)
+//{
+//}
 
 /******************************************************************************/
 /*                 STM32F4xx Peripherals Interrupt Handlers                   */

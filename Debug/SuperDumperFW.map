@@ -1,61 +1,50 @@
 Archive member included because of file (symbol)
 
-d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-exit.o)
-                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o (exit)
-d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-impure.o)
-                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-exit.o) (_global_impure_ptr)
-d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-init.o)
-                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o (__libc_init_array)
-d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-memset.o)
-                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o (memset)
-d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__call_atexit.o)
-                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-exit.o) (__call_exitprocs)
-d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-atexit.o)
-                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__call_atexit.o) (atexit)
-d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-fini.o)
-                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__call_atexit.o) (__libc_fini_array)
-d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__atexit.o)
-                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-atexit.o) (__register_exitproc)
+d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-exit.o)
+                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o (exit)
+d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-impure.o)
+                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-exit.o) (_global_impure_ptr)
+d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-init.o)
+                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o (__libc_init_array)
+d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-memset.o)
+                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o (memset)
+d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__call_atexit.o)
+                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-exit.o) (__call_exitprocs)
+d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-atexit.o)
+                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__call_atexit.o) (atexit)
+d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-fini.o)
+                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__call_atexit.o) (__libc_fini_array)
+d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__atexit.o)
+                              d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-atexit.o) (__register_exitproc)
 
 Allocating common symbols
 Common symbol       size              file
 
-APP_tx_end_cmd      0x1               ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
-APP_Tx_Buffer       0x80              ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
 SET_TEST_MODE       0x4               ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
-CRC32               0x4               ./src/main.o
-Data_Buf            0x10010           ./src/main.o
-BSize               0x4               ./src/main.o
-Adr                 0x4               ./src/main.o
-Cnt                 0x4               ./src/main.o
-Mode                0x1               ./src/main.o
-Size                0x4               ./src/main.o
+Data_Buf            0x10010           ./src/usb-cdc/link.o
+Ans_Buf             0x10              ./src/usb-cdc/link.o
 usbd_cdc_OtherCfgDesc
                     0x43              ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
 USB_CDC_STATUS      0x1               ./src/usb-cdc/link.o
-APP_tx_ptr_tail     0x4               ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
 USB_Rx_Buffer       0x40              ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
 CmdBuff             0x8               ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
 USB_OTG_dev         0x5f4             ./src/usb-cdc/link.o
 APP_Rx_Buffer       0x800             ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-DendyLED            0x4               ./src/main.o
 USBD_StrDesc        0x32              ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-SegaLED             0x4               ./src/main.o
-APP_tx_ptr_head     0x4               ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
 
 Discarded input sections
 
- .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crti.o
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crti.o
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crti.o
- .data          0x00000000        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
- .text          0x00000000       0x74 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o
- .ARM.extab     0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o
- .ARM.exidx     0x00000000        0x8 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o
+ .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
+ .data          0x00000000        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
+ .text          0x00000000       0x74 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o
+ .ARM.extab     0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o
+ .ARM.exidx     0x00000000        0x8 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o
  .ARM.attributes
-                0x00000000       0x1c d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o
+                0x00000000       0x20 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o
  .group         0x00000000        0x8 ./src/utils/utils.o
  .group         0x00000000        0x8 ./src/utils/utils.o
  .group         0x00000000        0x8 ./src/utils/utils.o
@@ -105,14 +94,10 @@ Discarded input sections
  .data          0x00000000        0x0 ./src/usb-cdc/link.o
  .bss           0x00000000        0x0 ./src/usb-cdc/link.o
  .text.UB_USB_CDC_Init
-                0x00000000       0x34 ./src/usb-cdc/link.o
+                0x00000000       0x70 ./src/usb-cdc/link.o
  .text.UB_USB_CDC_GetStatus
                 0x00000000       0x18 ./src/usb-cdc/link.o
- .text.UB_USB_CDC_SendString
-                0x00000000       0x84 ./src/usb-cdc/link.o
- .text.UB_USB_CDC_ReceiveString
-                0x00000000       0x3c ./src/usb-cdc/link.o
- .debug_macro   0x00000000      0x886 ./src/usb-cdc/link.o
+ .debug_macro   0x00000000      0x88c ./src/usb-cdc/link.o
  .debug_macro   0x00000000       0x22 ./src/usb-cdc/link.o
  .debug_macro   0x00000000       0x44 ./src/usb-cdc/link.o
  .debug_macro   0x00000000       0x58 ./src/usb-cdc/link.o
@@ -157,7 +142,7 @@ Discarded input sections
  .bss           0x00000000        0x0 ./src/usb-cdc/usbd_desc.o
  .data.USBD_DeviceQualifierDesc
                 0x00000000        0xa ./src/usb-cdc/usbd_desc.o
- .debug_macro   0x00000000      0x886 ./src/usb-cdc/usbd_desc.o
+ .debug_macro   0x00000000      0x88c ./src/usb-cdc/usbd_desc.o
  .debug_macro   0x00000000       0x6b ./src/usb-cdc/usbd_desc.o
  .debug_macro   0x00000000       0x3b ./src/usb-cdc/usbd_desc.o
  .debug_macro   0x00000000       0x22 ./src/usb-cdc/usbd_desc.o
@@ -208,7 +193,7 @@ Discarded input sections
  .text          0x00000000        0x0 ./src/usb-cdc/usbd_usr.o
  .data          0x00000000        0x0 ./src/usb-cdc/usbd_usr.o
  .bss           0x00000000        0x0 ./src/usb-cdc/usbd_usr.o
- .debug_macro   0x00000000      0x886 ./src/usb-cdc/usbd_usr.o
+ .debug_macro   0x00000000      0x88c ./src/usb-cdc/usbd_usr.o
  .debug_macro   0x00000000       0x6b ./src/usb-cdc/usbd_usr.o
  .debug_macro   0x00000000       0x3b ./src/usb-cdc/usbd_usr.o
  .debug_macro   0x00000000       0x22 ./src/usb-cdc/usbd_usr.o
@@ -233,7 +218,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x124 ./src/usb-cdc/usbd_usr.o
  .debug_macro   0x00000000       0x88 ./src/usb-cdc/usbd_usr.o
  .debug_macro   0x00000000       0x2e ./src/usb-cdc/usbd_usr.o
- .debug_macro   0x00000000       0x22 ./src/usb-cdc/usbd_usr.o
+ .debug_macro   0x00000000       0x10 ./src/usb-cdc/usbd_usr.o
  .group         0x00000000        0x8 ./src/dumper/dendy.o
  .group         0x00000000        0x8 ./src/dumper/dendy.o
  .group         0x00000000        0x8 ./src/dumper/dendy.o
@@ -254,7 +239,13 @@ Discarded input sections
  .text          0x00000000        0x0 ./src/dumper/dendy.o
  .data          0x00000000        0x0 ./src/dumper/dendy.o
  .bss           0x00000000        0x0 ./src/dumper/dendy.o
- .debug_macro   0x00000000      0x886 ./src/dumper/dendy.o
+ .text.Dendy_Manual
+                0x00000000       0x6c ./src/dumper/dendy.o
+ .text.Dendy_ManualRead
+                0x00000000       0xe8 ./src/dumper/dendy.o
+ .text.Dendy_ManualWrite
+                0x00000000      0x128 ./src/dumper/dendy.o
+ .debug_macro   0x00000000      0x88c ./src/dumper/dendy.o
  .debug_macro   0x00000000       0x22 ./src/dumper/dendy.o
  .debug_macro   0x00000000       0x44 ./src/dumper/dendy.o
  .debug_macro   0x00000000       0x58 ./src/dumper/dendy.o
@@ -325,7 +316,9 @@ Discarded input sections
  .data.clYellow
                 0x00000000        0x4 ./src/main.o
  .data.clWhite  0x00000000        0x4 ./src/main.o
- .debug_macro   0x00000000      0x886 ./src/main.o
+ .text.vTaskDelayed
+                0x00000000      0x124 ./src/main.o
+ .debug_macro   0x00000000      0x88c ./src/main.o
  .debug_macro   0x00000000       0x6b ./src/main.o
  .debug_macro   0x00000000       0x3b ./src/main.o
  .debug_macro   0x00000000       0x22 ./src/main.o
@@ -349,7 +342,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x3a ./src/main.o
  .debug_macro   0x00000000       0x88 ./src/main.o
  .debug_macro   0x00000000       0x2e ./src/main.o
- .debug_macro   0x00000000       0x22 ./src/main.o
+ .debug_macro   0x00000000       0x10 ./src/main.o
  .text          0x00000000       0x14 ./src/startup_stm32f4xx.o
  .data          0x00000000        0x0 ./src/startup_stm32f4xx.o
  .bss           0x00000000        0x0 ./src/startup_stm32f4xx.o
@@ -372,7 +365,7 @@ Discarded input sections
  .text          0x00000000        0x0 ./src/stm32f4xx_it.o
  .data          0x00000000        0x0 ./src/stm32f4xx_it.o
  .bss           0x00000000        0x0 ./src/stm32f4xx_it.o
- .debug_macro   0x00000000      0x886 ./src/stm32f4xx_it.o
+ .debug_macro   0x00000000      0x88c ./src/stm32f4xx_it.o
  .debug_macro   0x00000000       0x6b ./src/stm32f4xx_it.o
  .debug_macro   0x00000000       0x3b ./src/stm32f4xx_it.o
  .debug_macro   0x00000000       0x22 ./src/stm32f4xx_it.o
@@ -412,7 +405,7 @@ Discarded input sections
  .text          0x00000000        0x0 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
  .data          0x00000000        0x0 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
  .bss           0x00000000        0x0 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
- .debug_macro   0x00000000      0x886 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
  .debug_macro   0x00000000       0x6b ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
  .debug_macro   0x00000000       0x3b ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
  .debug_macro   0x00000000       0x22 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
@@ -432,6 +425,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x76 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
  .debug_macro   0x00000000      0x20f ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
  .debug_macro   0x00000000       0x64 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+ .debug_macro   0x00000000       0x4c ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
  .group         0x00000000        0x8 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
  .group         0x00000000        0x8 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
  .group         0x00000000        0x8 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
@@ -471,7 +465,7 @@ Discarded input sections
                 0x00000000       0xac ./lib/STM32_USB_OTG_Driver/src/usb_core.o
  .text.USB_OTG_SetEPStatus
                 0x00000000      0x12c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
- .debug_macro   0x00000000      0x886 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
  .debug_macro   0x00000000       0x6b ./lib/STM32_USB_OTG_Driver/src/usb_core.o
  .debug_macro   0x00000000       0x3b ./lib/STM32_USB_OTG_Driver/src/usb_core.o
  .debug_macro   0x00000000       0x22 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
@@ -527,7 +521,7 @@ Discarded input sections
                 0x00000000       0x60 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
  .text.DCD_SetEPStatus
                 0x00000000       0x58 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
- .debug_macro   0x00000000      0x886 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
  .debug_macro   0x00000000       0x6b ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
  .debug_macro   0x00000000       0x3b ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
  .debug_macro   0x00000000       0x22 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
@@ -573,7 +567,7 @@ Discarded input sections
  .text          0x00000000        0x0 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .data          0x00000000        0x0 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .bss           0x00000000        0x0 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
- .debug_macro   0x00000000      0x886 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .debug_macro   0x00000000       0x6b ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .debug_macro   0x00000000       0x3b ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .debug_macro   0x00000000       0x22 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
@@ -622,7 +616,7 @@ Discarded input sections
  .text          0x00000000        0x0 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .data          0x00000000        0x0 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .bss           0x00000000        0x0 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
- .debug_macro   0x00000000      0x886 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .debug_macro   0x00000000       0x6b ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .debug_macro   0x00000000       0x3b ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .debug_macro   0x00000000       0x22 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
@@ -674,7 +668,7 @@ Discarded input sections
  .bss           0x00000000        0x0 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
  .text.USBD_GetRxCount
                 0x00000000       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
- .debug_macro   0x00000000      0x886 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
  .debug_macro   0x00000000       0x4c ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
  .debug_macro   0x00000000      0x124 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
  .debug_macro   0x00000000       0x6b ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
@@ -724,7 +718,7 @@ Discarded input sections
  .text          0x00000000        0x0 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .data          0x00000000        0x0 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .bss           0x00000000        0x0 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
- .debug_macro   0x00000000      0x886 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .debug_macro   0x00000000       0x4c ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .debug_macro   0x00000000      0x124 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .debug_macro   0x00000000       0x6b ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
@@ -747,6 +741,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x20f ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .debug_macro   0x00000000       0x64 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .debug_macro   0x00000000       0x3a ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+ .debug_macro   0x00000000       0x2e ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .group         0x00000000        0x8 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .group         0x00000000        0x8 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .group         0x00000000        0x8 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
@@ -775,7 +770,7 @@ Discarded input sections
  .text          0x00000000        0x0 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .data          0x00000000        0x0 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .bss           0x00000000        0x0 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
- .debug_macro   0x00000000      0x886 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .debug_macro   0x00000000       0x4c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .debug_macro   0x00000000      0x124 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .debug_macro   0x00000000       0x6b ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
@@ -829,9 +824,7 @@ Discarded input sections
  .text          0x00000000        0x0 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .data          0x00000000        0x0 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .bss           0x00000000        0x0 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
- .text.UB_VCP_StringRx
-                0x00000000       0xac ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
- .debug_macro   0x00000000      0x886 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .debug_macro   0x00000000       0x6b ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .debug_macro   0x00000000       0x3b ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .debug_macro   0x00000000       0x22 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
@@ -856,7 +849,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x3a ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .debug_macro   0x00000000       0x88 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .debug_macro   0x00000000       0x2e ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
- .debug_macro   0x00000000       0x22 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+ .debug_macro   0x00000000       0x10 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .group         0x00000000        0x8 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
  .group         0x00000000        0x8 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
  .group         0x00000000        0x8 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
@@ -882,7 +875,7 @@ Discarded input sections
                 0x00000000       0x40 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
  .text.SysTick_CLKSourceConfig
                 0x00000000       0x38 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
- .debug_macro   0x00000000      0x886 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
  .debug_macro   0x00000000       0x6b ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
  .debug_macro   0x00000000       0x3b ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
  .debug_macro   0x00000000       0x22 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
@@ -936,7 +929,7 @@ Discarded input sections
                 0x00000000       0x1c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
  .text.GPIO_ToggleBits
                 0x00000000       0x24 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_macro   0x00000000      0x886 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
  .debug_macro   0x00000000       0x6b ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
  .debug_macro   0x00000000       0x3b ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
  .debug_macro   0x00000000       0x22 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
@@ -1068,7 +1061,7 @@ Discarded input sections
                 0x00000000       0x38 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
  .text.RCC_ClearITPendingBit
                 0x00000000       0x20 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_macro   0x00000000      0x886 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_macro   0x00000000      0x88c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
  .debug_macro   0x00000000       0x6b ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
  .debug_macro   0x00000000       0x3b ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
  .debug_macro   0x00000000       0x22 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
@@ -1109,7 +1102,7 @@ Discarded input sections
                 0x00000000       0x10 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
  .text.SystemCoreClockUpdate
                 0x00000000       0xf8 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
- .debug_macro   0x00000000      0x886 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+ .debug_macro   0x00000000      0x88c ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
  .debug_macro   0x00000000       0x6b ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
  .debug_macro   0x00000000       0x3b ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
  .debug_macro   0x00000000       0x22 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
@@ -1125,52 +1118,52 @@ Discarded input sections
  .debug_macro   0x00000000      0x651 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
  .debug_macro   0x00000000       0x82 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
  .debug_macro   0x00000000       0x35 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
- .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-exit.o)
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-exit.o)
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-exit.o)
- .text.exit     0x00000000       0x20 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-exit.o)
- .debug_frame   0x00000000       0x28 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-exit.o)
+ .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-exit.o)
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x20 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-exit.o)
+ .debug_frame   0x00000000       0x28 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-exit.o)
  .ARM.attributes
-                0x00000000       0x2e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-exit.o)
- .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-impure.o)
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-impure.o)
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-impure.o)
+                0x00000000       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-exit.o)
+ .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-impure.o)
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-impure.o)
  .data._impure_ptr
-                0x00000000        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-impure.o)
- .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-init.o)
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-init.o)
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-init.o)
- .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-memset.o)
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-memset.o)
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-memset.o)
- .text.memset   0x00000000       0x9c d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-memset.o)
- .debug_frame   0x00000000       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-memset.o)
+                0x00000000        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-impure.o)
+ .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-init.o)
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-init.o)
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-init.o)
+ .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-memset.o)
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-memset.o)
+ .text.memset   0x00000000       0x9c d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-memset.o)
+ .debug_frame   0x00000000       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000000       0x2e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-memset.o)
- .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__call_atexit.o)
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__call_atexit.o)
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__call_atexit.o)
+                0x00000000       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-memset.o)
+ .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__call_atexit.o)
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__call_atexit.o)
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__call_atexit.o)
  .text.__call_exitprocs
-                0x00000000       0xd4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__call_atexit.o)
- .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-atexit.o)
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-atexit.o)
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-atexit.o)
- .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-fini.o)
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-fini.o)
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-fini.o)
- .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__atexit.o)
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__atexit.o)
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__atexit.o)
- .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtend.o
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtend.o
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtend.o
- .eh_frame      0x00000000        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtend.o
- .jcr           0x00000000        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtend.o
+                0x00000000       0xd4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__call_atexit.o)
+ .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-atexit.o)
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-atexit.o)
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-atexit.o)
+ .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-fini.o)
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-fini.o)
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-fini.o)
+ .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__atexit.o)
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__atexit.o)
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__atexit.o)
+ .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
+ .eh_frame      0x00000000        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
+ .jcr           0x00000000        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
  .ARM.attributes
-                0x00000000       0x2e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtend.o
- .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtn.o
- .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtn.o
- .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtn.o
+                0x00000000       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
+ .text          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
+ .data          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
+ .bss           0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
 
 Memory Configuration
 
@@ -1183,9 +1176,9 @@ MEMORY_B1        0x60000000         0x00000000         xr
 
 Linker script and memory map
 
-LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crti.o
-LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
-LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/crt0.o
+LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
+LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
+LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o
 LOAD ./src/utils/utils.o
 LOAD ./src/usb-cdc/link.o
 LOAD ./src/usb-cdc/usbd_desc.o
@@ -1208,12 +1201,12 @@ LOAD ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
 LOAD ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
 LOAD ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
 START GROUP
-LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m\libgcc.a
-LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a
-LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a
+LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu\libgcc.a
+LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a
+LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a
 END GROUP
-LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtend.o
-LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtn.o
+LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
+LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
                 0x20020000                _estack = 0x20020000
                 0x00000000                _Min_Heap_Size = 0x0
                 0x00000400                _Min_Stack_Size = 0x400
@@ -1225,10 +1218,10 @@ LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-
                 0x08000000                g_pfnVectors
                 0x08000188                . = ALIGN (0x4)
 
-.text           0x08000188     0x5970
+.text           0x08000188     0x5b18
                 0x08000188                . = ALIGN (0x4)
  *(.text)
- .text          0x08000188       0x5c d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
+ .text          0x08000188       0x5c d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
  *(.text*)
  .text.Delay    0x080001e4       0x10 ./src/utils/utils.o
                 0x080001e4                Delay
@@ -1238,596 +1231,593 @@ LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-
  .text.UpdateLEDs
                 0x0800022c       0xb4 ./src/utils/utils.o
                 0x0800022c                UpdateLEDs
+ .text.USB_Check
+                0x080002e0       0x58 ./src/usb-cdc/link.o
+                0x080002e0                USB_Check
+ .text.USB_ClearBusy
+                0x08000338       0x18 ./src/usb-cdc/link.o
+                0x08000338                USB_ClearBusy
  .text.USB_Read
-                0x080002e0      0x1ec ./src/usb-cdc/link.o
-                0x080002e0                USB_Read
+                0x08000350      0x25c ./src/usb-cdc/link.o
+                0x08000350                USB_Read
  .text.USB_Write
-                0x080004cc       0xdc ./src/usb-cdc/link.o
-                0x080004cc                USB_Write
+                0x080005ac       0xdc ./src/usb-cdc/link.o
+                0x080005ac                USB_Write
  .text.USBD_USR_DeviceDescriptor
-                0x080005a8       0x24 ./src/usb-cdc/usbd_desc.o
-                0x080005a8                USBD_USR_DeviceDescriptor
+                0x08000688       0x24 ./src/usb-cdc/usbd_desc.o
+                0x08000688                USBD_USR_DeviceDescriptor
  .text.USBD_USR_LangIDStrDescriptor
-                0x080005cc       0x24 ./src/usb-cdc/usbd_desc.o
-                0x080005cc                USBD_USR_LangIDStrDescriptor
+                0x080006ac       0x24 ./src/usb-cdc/usbd_desc.o
+                0x080006ac                USBD_USR_LangIDStrDescriptor
  .text.USBD_USR_ProductStrDescriptor
-                0x080005f0       0x28 ./src/usb-cdc/usbd_desc.o
-                0x080005f0                USBD_USR_ProductStrDescriptor
+                0x080006d0       0x28 ./src/usb-cdc/usbd_desc.o
+                0x080006d0                USBD_USR_ProductStrDescriptor
  .text.USBD_USR_ManufacturerStrDescriptor
-                0x08000618       0x28 ./src/usb-cdc/usbd_desc.o
-                0x08000618                USBD_USR_ManufacturerStrDescriptor
+                0x080006f8       0x28 ./src/usb-cdc/usbd_desc.o
+                0x080006f8                USBD_USR_ManufacturerStrDescriptor
  .text.USBD_USR_SerialStrDescriptor
-                0x08000640       0x28 ./src/usb-cdc/usbd_desc.o
-                0x08000640                USBD_USR_SerialStrDescriptor
+                0x08000720       0x28 ./src/usb-cdc/usbd_desc.o
+                0x08000720                USBD_USR_SerialStrDescriptor
  .text.USBD_USR_ConfigStrDescriptor
-                0x08000668       0x28 ./src/usb-cdc/usbd_desc.o
-                0x08000668                USBD_USR_ConfigStrDescriptor
+                0x08000748       0x28 ./src/usb-cdc/usbd_desc.o
+                0x08000748                USBD_USR_ConfigStrDescriptor
  .text.USBD_USR_InterfaceStrDescriptor
-                0x08000690       0x28 ./src/usb-cdc/usbd_desc.o
-                0x08000690                USBD_USR_InterfaceStrDescriptor
+                0x08000770       0x28 ./src/usb-cdc/usbd_desc.o
+                0x08000770                USBD_USR_InterfaceStrDescriptor
  .text.USBD_USR_Init
-                0x080006b8       0x18 ./src/usb-cdc/usbd_usr.o
-                0x080006b8                USBD_USR_Init
+                0x08000798       0x18 ./src/usb-cdc/usbd_usr.o
+                0x08000798                USBD_USR_Init
  .text.USBD_USR_DeviceReset
-                0x080006d0       0x20 ./src/usb-cdc/usbd_usr.o
-                0x080006d0                USBD_USR_DeviceReset
+                0x080007b0       0x20 ./src/usb-cdc/usbd_usr.o
+                0x080007b0                USBD_USR_DeviceReset
  .text.USBD_USR_DeviceConfigured
-                0x080006f0       0x18 ./src/usb-cdc/usbd_usr.o
-                0x080006f0                USBD_USR_DeviceConfigured
+                0x080007d0       0x18 ./src/usb-cdc/usbd_usr.o
+                0x080007d0                USBD_USR_DeviceConfigured
  .text.USBD_USR_DeviceConnected
-                0x08000708       0x18 ./src/usb-cdc/usbd_usr.o
-                0x08000708                USBD_USR_DeviceConnected
+                0x080007e8       0x18 ./src/usb-cdc/usbd_usr.o
+                0x080007e8                USBD_USR_DeviceConnected
  .text.USBD_USR_DeviceDisconnected
-                0x08000720       0x18 ./src/usb-cdc/usbd_usr.o
-                0x08000720                USBD_USR_DeviceDisconnected
+                0x08000800       0x18 ./src/usb-cdc/usbd_usr.o
+                0x08000800                USBD_USR_DeviceDisconnected
  .text.USBD_USR_DeviceSuspended
-                0x08000738       0x18 ./src/usb-cdc/usbd_usr.o
-                0x08000738                USBD_USR_DeviceSuspended
+                0x08000818       0x18 ./src/usb-cdc/usbd_usr.o
+                0x08000818                USBD_USR_DeviceSuspended
  .text.USBD_USR_DeviceResumed
-                0x08000750       0x18 ./src/usb-cdc/usbd_usr.o
-                0x08000750                USBD_USR_DeviceResumed
+                0x08000830       0x18 ./src/usb-cdc/usbd_usr.o
+                0x08000830                USBD_USR_DeviceResumed
  .text.Dendy_Off
-                0x08000768       0x84 ./src/dumper/dendy.o
-                0x08000768                Dendy_Off
+                0x08000848       0x7c ./src/dumper/dendy.o
+                0x08000848                Dendy_Off
  .text.Dendy_On
-                0x080007ec       0xc0 ./src/dumper/dendy.o
-                0x080007ec                Dendy_On
+                0x080008c4       0xb8 ./src/dumper/dendy.o
+                0x080008c4                Dendy_On
  .text.Dendy_Reset
-                0x080008ac       0x40 ./src/dumper/dendy.o
-                0x080008ac                Dendy_Reset
+                0x0800097c       0x40 ./src/dumper/dendy.o
+                0x0800097c                Dendy_Reset
  .text.Read_PRG
-                0x080008ec       0x84 ./src/dumper/dendy.o
-                0x080008ec                Read_PRG
+                0x080009bc       0x84 ./src/dumper/dendy.o
+                0x080009bc                Read_PRG
  .text.Dendy_Read
-                0x08000970       0xf8 ./src/dumper/dendy.o
-                0x08000970                Dendy_Read
+                0x08000a40       0xf8 ./src/dumper/dendy.o
+                0x08000a40                Dendy_Read
  .text.Write_PRG
-                0x08000a68       0xb8 ./src/dumper/dendy.o
-                0x08000a68                Write_PRG
+                0x08000b38       0xb8 ./src/dumper/dendy.o
+                0x08000b38                Write_PRG
  .text.Dendy_Write
-                0x08000b20      0x130 ./src/dumper/dendy.o
-                0x08000b20                Dendy_Write
+                0x08000bf0      0x130 ./src/dumper/dendy.o
+                0x08000bf0                Dendy_Write
  .text.OTG_FS_IRQHandler
-                0x08000c50       0x10 ./src/main.o
-                0x08000c50                OTG_FS_IRQHandler
- .text.HWInit   0x08000c60      0x178 ./src/main.o
-                0x08000c60                HWInit
+                0x08000d20       0x10 ./src/main.o
+                0x08000d20                OTG_FS_IRQHandler
+ .text.HWInit   0x08000d30      0x178 ./src/main.o
+                0x08000d30                HWInit
  .text.SendError
-                0x08000dd8       0x34 ./src/main.o
-                0x08000dd8                SendError
- .text.main     0x08000e0c      0x97c ./src/main.o
-                0x08000e0c                main
+                0x08000ea8       0x34 ./src/main.o
+                0x08000ea8                SendError
+ .text.main     0x08000edc      0xb30 ./src/main.o
+                0x08000edc                main
  .text.Reset_Handler
-                0x08001788       0x58 ./src/startup_stm32f4xx.o
-                0x08001788                Reset_Handler
+                0x08001a0c       0x58 ./src/startup_stm32f4xx.o
+                0x08001a0c                Reset_Handler
  .text.Default_Handler
-                0x080017e0        0x2 ./src/startup_stm32f4xx.o
-                0x080017e0                RTC_Alarm_IRQHandler
-                0x080017e0                HASH_RNG_IRQHandler
-                0x080017e0                EXTI2_IRQHandler
-                0x080017e0                TIM8_CC_IRQHandler
-                0x080017e0                TIM1_CC_IRQHandler
-                0x080017e0                DMA2_Stream5_IRQHandler
-                0x080017e0                DMA1_Stream5_IRQHandler
-                0x080017e0                PVD_IRQHandler
-                0x080017e0                SDIO_IRQHandler
-                0x080017e0                TAMP_STAMP_IRQHandler
-                0x080017e0                CAN2_RX1_IRQHandler
-                0x080017e0                EXTI3_IRQHandler
-                0x080017e0                TIM8_TRG_COM_TIM14_IRQHandler
-                0x080017e0                TIM1_UP_TIM10_IRQHandler
-                0x080017e0                TIM8_UP_TIM13_IRQHandler
-                0x080017e0                I2C3_ER_IRQHandler
-                0x080017e0                EXTI0_IRQHandler
-                0x080017e0                I2C2_EV_IRQHandler
-                0x080017e0                DMA1_Stream2_IRQHandler
-                0x080017e0                CAN1_RX0_IRQHandler
-                0x080017e0                FPU_IRQHandler
-                0x080017e0                OTG_HS_WKUP_IRQHandler
-                0x080017e0                CAN2_SCE_IRQHandler
-                0x080017e0                DMA2_Stream2_IRQHandler
-                0x080017e0                SPI1_IRQHandler
-                0x080017e0                TIM6_DAC_IRQHandler
-                0x080017e0                TIM1_BRK_TIM9_IRQHandler
-                0x080017e0                DCMI_IRQHandler
-                0x080017e0                CAN2_RX0_IRQHandler
-                0x080017e0                DMA2_Stream3_IRQHandler
-                0x080017e0                USART6_IRQHandler
-                0x080017e0                USART3_IRQHandler
-                0x080017e0                CRYP_IRQHandler
-                0x080017e0                CAN1_RX1_IRQHandler
-                0x080017e0                UART5_IRQHandler
-                0x080017e0                DMA2_Stream0_IRQHandler
-                0x080017e0                TIM4_IRQHandler
-                0x080017e0                I2C1_EV_IRQHandler
-                0x080017e0                DMA1_Stream6_IRQHandler
-                0x080017e0                DMA1_Stream1_IRQHandler
-                0x080017e0                UART4_IRQHandler
-                0x080017e0                TIM3_IRQHandler
-                0x080017e0                RCC_IRQHandler
-                0x080017e0                TIM8_BRK_TIM12_IRQHandler
-                0x080017e0                Default_Handler
-                0x080017e0                EXTI15_10_IRQHandler
-                0x080017e0                ADC_IRQHandler
-                0x080017e0                DMA1_Stream7_IRQHandler
-                0x080017e0                TIM7_IRQHandler
-                0x080017e0                CAN2_TX_IRQHandler
-                0x080017e0                TIM5_IRQHandler
-                0x080017e0                DMA2_Stream7_IRQHandler
-                0x080017e0                I2C3_EV_IRQHandler
-                0x080017e0                EXTI9_5_IRQHandler
-                0x080017e0                RTC_WKUP_IRQHandler
-                0x080017e0                ETH_WKUP_IRQHandler
-                0x080017e0                SPI2_IRQHandler
-                0x080017e0                OTG_HS_EP1_IN_IRQHandler
-                0x080017e0                DMA1_Stream0_IRQHandler
-                0x080017e0                CAN1_TX_IRQHandler
-                0x080017e0                EXTI4_IRQHandler
-                0x080017e0                FSMC_IRQHandler
-                0x080017e0                ETH_IRQHandler
-                0x080017e0                OTG_HS_EP1_OUT_IRQHandler
-                0x080017e0                WWDG_IRQHandler
-                0x080017e0                TIM2_IRQHandler
-                0x080017e0                OTG_FS_WKUP_IRQHandler
-                0x080017e0                TIM1_TRG_COM_TIM11_IRQHandler
-                0x080017e0                OTG_HS_IRQHandler
-                0x080017e0                EXTI1_IRQHandler
-                0x080017e0                USART2_IRQHandler
-                0x080017e0                I2C2_ER_IRQHandler
-                0x080017e0                DMA2_Stream1_IRQHandler
-                0x080017e0                CAN1_SCE_IRQHandler
-                0x080017e0                FLASH_IRQHandler
-                0x080017e0                DMA2_Stream4_IRQHandler
-                0x080017e0                USART1_IRQHandler
-                0x080017e0                SPI3_IRQHandler
-                0x080017e0                DMA1_Stream4_IRQHandler
-                0x080017e0                I2C1_ER_IRQHandler
-                0x080017e0                DMA2_Stream6_IRQHandler
-                0x080017e0                DMA1_Stream3_IRQHandler
- *fill*         0x080017e2        0x2 
+                0x08001a64        0x2 ./src/startup_stm32f4xx.o
+                0x08001a64                RTC_Alarm_IRQHandler
+                0x08001a64                HASH_RNG_IRQHandler
+                0x08001a64                EXTI2_IRQHandler
+                0x08001a64                TIM8_CC_IRQHandler
+                0x08001a64                TIM1_CC_IRQHandler
+                0x08001a64                DMA2_Stream5_IRQHandler
+                0x08001a64                DMA1_Stream5_IRQHandler
+                0x08001a64                SysTick_Handler
+                0x08001a64                PVD_IRQHandler
+                0x08001a64                SDIO_IRQHandler
+                0x08001a64                TAMP_STAMP_IRQHandler
+                0x08001a64                PendSV_Handler
+                0x08001a64                CAN2_RX1_IRQHandler
+                0x08001a64                EXTI3_IRQHandler
+                0x08001a64                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08001a64                TIM1_UP_TIM10_IRQHandler
+                0x08001a64                TIM8_UP_TIM13_IRQHandler
+                0x08001a64                I2C3_ER_IRQHandler
+                0x08001a64                EXTI0_IRQHandler
+                0x08001a64                I2C2_EV_IRQHandler
+                0x08001a64                DMA1_Stream2_IRQHandler
+                0x08001a64                CAN1_RX0_IRQHandler
+                0x08001a64                FPU_IRQHandler
+                0x08001a64                OTG_HS_WKUP_IRQHandler
+                0x08001a64                CAN2_SCE_IRQHandler
+                0x08001a64                DMA2_Stream2_IRQHandler
+                0x08001a64                SPI1_IRQHandler
+                0x08001a64                TIM6_DAC_IRQHandler
+                0x08001a64                TIM1_BRK_TIM9_IRQHandler
+                0x08001a64                DCMI_IRQHandler
+                0x08001a64                CAN2_RX0_IRQHandler
+                0x08001a64                DMA2_Stream3_IRQHandler
+                0x08001a64                USART6_IRQHandler
+                0x08001a64                USART3_IRQHandler
+                0x08001a64                CRYP_IRQHandler
+                0x08001a64                CAN1_RX1_IRQHandler
+                0x08001a64                UART5_IRQHandler
+                0x08001a64                DMA2_Stream0_IRQHandler
+                0x08001a64                TIM4_IRQHandler
+                0x08001a64                I2C1_EV_IRQHandler
+                0x08001a64                DMA1_Stream6_IRQHandler
+                0x08001a64                DMA1_Stream1_IRQHandler
+                0x08001a64                UART4_IRQHandler
+                0x08001a64                TIM3_IRQHandler
+                0x08001a64                RCC_IRQHandler
+                0x08001a64                TIM8_BRK_TIM12_IRQHandler
+                0x08001a64                Default_Handler
+                0x08001a64                EXTI15_10_IRQHandler
+                0x08001a64                ADC_IRQHandler
+                0x08001a64                DMA1_Stream7_IRQHandler
+                0x08001a64                TIM7_IRQHandler
+                0x08001a64                CAN2_TX_IRQHandler
+                0x08001a64                TIM5_IRQHandler
+                0x08001a64                DMA2_Stream7_IRQHandler
+                0x08001a64                I2C3_EV_IRQHandler
+                0x08001a64                EXTI9_5_IRQHandler
+                0x08001a64                RTC_WKUP_IRQHandler
+                0x08001a64                ETH_WKUP_IRQHandler
+                0x08001a64                SPI2_IRQHandler
+                0x08001a64                OTG_HS_EP1_IN_IRQHandler
+                0x08001a64                DMA1_Stream0_IRQHandler
+                0x08001a64                CAN1_TX_IRQHandler
+                0x08001a64                SVC_Handler
+                0x08001a64                EXTI4_IRQHandler
+                0x08001a64                FSMC_IRQHandler
+                0x08001a64                ETH_IRQHandler
+                0x08001a64                OTG_HS_EP1_OUT_IRQHandler
+                0x08001a64                WWDG_IRQHandler
+                0x08001a64                TIM2_IRQHandler
+                0x08001a64                OTG_FS_WKUP_IRQHandler
+                0x08001a64                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08001a64                OTG_HS_IRQHandler
+                0x08001a64                EXTI1_IRQHandler
+                0x08001a64                USART2_IRQHandler
+                0x08001a64                I2C2_ER_IRQHandler
+                0x08001a64                DMA2_Stream1_IRQHandler
+                0x08001a64                CAN1_SCE_IRQHandler
+                0x08001a64                FLASH_IRQHandler
+                0x08001a64                DMA2_Stream4_IRQHandler
+                0x08001a64                USART1_IRQHandler
+                0x08001a64                SPI3_IRQHandler
+                0x08001a64                DMA1_Stream4_IRQHandler
+                0x08001a64                I2C1_ER_IRQHandler
+                0x08001a64                DMA2_Stream6_IRQHandler
+                0x08001a64                DMA1_Stream3_IRQHandler
+ *fill*         0x08001a66        0x2 
  .text.NMI_Handler
-                0x080017e4        0xc ./src/stm32f4xx_it.o
-                0x080017e4                NMI_Handler
+                0x08001a68        0xc ./src/stm32f4xx_it.o
+                0x08001a68                NMI_Handler
  .text.HardFault_Handler
-                0x080017f0        0x8 ./src/stm32f4xx_it.o
-                0x080017f0                HardFault_Handler
+                0x08001a74        0x8 ./src/stm32f4xx_it.o
+                0x08001a74                HardFault_Handler
  .text.MemManage_Handler
-                0x080017f8        0x8 ./src/stm32f4xx_it.o
-                0x080017f8                MemManage_Handler
+                0x08001a7c        0x8 ./src/stm32f4xx_it.o
+                0x08001a7c                MemManage_Handler
  .text.BusFault_Handler
-                0x08001800        0x8 ./src/stm32f4xx_it.o
-                0x08001800                BusFault_Handler
+                0x08001a84        0x8 ./src/stm32f4xx_it.o
+                0x08001a84                BusFault_Handler
  .text.UsageFault_Handler
-                0x08001808        0x8 ./src/stm32f4xx_it.o
-                0x08001808                UsageFault_Handler
- .text.SVC_Handler
-                0x08001810        0xc ./src/stm32f4xx_it.o
-                0x08001810                SVC_Handler
+                0x08001a8c        0x8 ./src/stm32f4xx_it.o
+                0x08001a8c                UsageFault_Handler
  .text.DebugMon_Handler
-                0x0800181c        0xc ./src/stm32f4xx_it.o
-                0x0800181c                DebugMon_Handler
- .text.PendSV_Handler
-                0x08001828        0xc ./src/stm32f4xx_it.o
-                0x08001828                PendSV_Handler
- .text.SysTick_Handler
-                0x08001834        0xc ./src/stm32f4xx_it.o
-                0x08001834                SysTick_Handler
+                0x08001a94        0xc ./src/stm32f4xx_it.o
+                0x08001a94                DebugMon_Handler
  .text.USB_OTG_BSP_Init
-                0x08001840       0xa8 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
-                0x08001840                USB_OTG_BSP_Init
+                0x08001aa0       0xa8 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+                0x08001aa0                USB_OTG_BSP_Init
  .text.USB_OTG_BSP_EnableInterrupt
-                0x080018e8       0x30 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
-                0x080018e8                USB_OTG_BSP_EnableInterrupt
+                0x08001b48       0x30 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+                0x08001b48                USB_OTG_BSP_EnableInterrupt
  .text.USB_OTG_BSP_uDelay
-                0x08001918       0x48 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
-                0x08001918                USB_OTG_BSP_uDelay
+                0x08001b78       0x48 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+                0x08001b78                USB_OTG_BSP_uDelay
  .text.USB_OTG_BSP_mDelay
-                0x08001960       0x20 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
-                0x08001960                USB_OTG_BSP_mDelay
+                0x08001bc0       0x20 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+                0x08001bc0                USB_OTG_BSP_mDelay
  .text.USB_OTG_EnableCommonInt
-                0x08001980       0x44 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08001be0       0x44 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
  .text.USB_OTG_CoreReset
-                0x080019c4       0x8c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08001c24       0x8c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
  .text.USB_OTG_WritePacket
-                0x08001a50       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001a50                USB_OTG_WritePacket
+                0x08001cb0       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08001cb0                USB_OTG_WritePacket
  .text.USB_OTG_ReadPacket
-                0x08001ac8       0x58 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001ac8                USB_OTG_ReadPacket
+                0x08001d28       0x58 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08001d28                USB_OTG_ReadPacket
  .text.USB_OTG_SelectCore
-                0x08001b20      0x174 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001b20                USB_OTG_SelectCore
+                0x08001d80      0x174 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08001d80                USB_OTG_SelectCore
  .text.USB_OTG_CoreInit
-                0x08001c94      0x13c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001c94                USB_OTG_CoreInit
+                0x08001ef4      0x13c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08001ef4                USB_OTG_CoreInit
  .text.USB_OTG_EnableGlobalInt
-                0x08001dd0       0x38 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001dd0                USB_OTG_EnableGlobalInt
+                0x08002030       0x38 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002030                USB_OTG_EnableGlobalInt
  .text.USB_OTG_DisableGlobalInt
-                0x08001e08       0x38 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001e08                USB_OTG_DisableGlobalInt
+                0x08002068       0x38 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002068                USB_OTG_DisableGlobalInt
  .text.USB_OTG_FlushTxFifo
-                0x08001e40       0x7c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001e40                USB_OTG_FlushTxFifo
+                0x080020a0       0x7c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080020a0                USB_OTG_FlushTxFifo
  .text.USB_OTG_FlushRxFifo
-                0x08001ebc       0x60 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001ebc                USB_OTG_FlushRxFifo
+                0x0800211c       0x60 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x0800211c                USB_OTG_FlushRxFifo
  .text.USB_OTG_SetCurrentMode
-                0x08001f1c       0x60 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001f1c                USB_OTG_SetCurrentMode
+                0x0800217c       0x60 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x0800217c                USB_OTG_SetCurrentMode
  .text.USB_OTG_GetMode
-                0x08001f7c       0x20 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001f7c                USB_OTG_GetMode
+                0x080021dc       0x20 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080021dc                USB_OTG_GetMode
  .text.USB_OTG_IsDeviceMode
-                0x08001f9c       0x24 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001f9c                USB_OTG_IsDeviceMode
+                0x080021fc       0x24 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080021fc                USB_OTG_IsDeviceMode
  .text.USB_OTG_ReadCoreItr
-                0x08001fc0       0x30 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001fc0                USB_OTG_ReadCoreItr
+                0x08002220       0x30 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002220                USB_OTG_ReadCoreItr
  .text.USB_OTG_InitDevSpeed
-                0x08001ff0       0x38 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08001ff0                USB_OTG_InitDevSpeed
+                0x08002250       0x38 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002250                USB_OTG_InitDevSpeed
  .text.USB_OTG_CoreInitDev
-                0x08002028      0x264 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08002028                USB_OTG_CoreInitDev
+                0x08002288      0x264 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002288                USB_OTG_CoreInitDev
  .text.USB_OTG_EnableDevInt
-                0x0800228c       0x98 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x0800228c                USB_OTG_EnableDevInt
+                0x080024ec       0x98 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080024ec                USB_OTG_EnableDevInt
  .text.USB_OTG_GetDeviceSpeed
-                0x08002324       0x48 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08002324                USB_OTG_GetDeviceSpeed
+                0x08002584       0x48 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002584                USB_OTG_GetDeviceSpeed
  .text.USB_OTG_EP0Activate
-                0x0800236c       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x0800236c                USB_OTG_EP0Activate
+                0x080025cc       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080025cc                USB_OTG_EP0Activate
  .text.USB_OTG_EPActivate
-                0x080023e4       0xdc ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080023e4                USB_OTG_EPActivate
+                0x08002644       0xdc ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002644                USB_OTG_EPActivate
  .text.USB_OTG_EPDeactivate
-                0x080024c0       0x8c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080024c0                USB_OTG_EPDeactivate
+                0x08002720       0x8c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002720                USB_OTG_EPDeactivate
  .text.USB_OTG_EPStartXfer
-                0x0800254c      0x280 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x0800254c                USB_OTG_EPStartXfer
+                0x080027ac      0x280 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x080027ac                USB_OTG_EPStartXfer
  .text.USB_OTG_EP0StartXfer
-                0x080027cc      0x1d4 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080027cc                USB_OTG_EP0StartXfer
+                0x08002a2c      0x1d4 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002a2c                USB_OTG_EP0StartXfer
  .text.USB_OTG_EPSetStall
-                0x080029a0       0x88 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x080029a0                USB_OTG_EPSetStall
+                0x08002c00       0x88 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002c00                USB_OTG_EPSetStall
  .text.USB_OTG_EPClearStall
-                0x08002a28       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08002a28                USB_OTG_EPClearStall
+                0x08002c88       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002c88                USB_OTG_EPClearStall
  .text.USB_OTG_ReadDevAllOutEp_itr
-                0x08002aa0       0x2c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08002aa0                USB_OTG_ReadDevAllOutEp_itr
+                0x08002d00       0x2c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002d00                USB_OTG_ReadDevAllOutEp_itr
  .text.USB_OTG_ReadDevOutEP_itr
-                0x08002acc       0x38 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08002acc                USB_OTG_ReadDevOutEP_itr
+                0x08002d2c       0x38 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002d2c                USB_OTG_ReadDevOutEP_itr
  .text.USB_OTG_ReadDevAllInEPItr
-                0x08002b04       0x2c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08002b04                USB_OTG_ReadDevAllInEPItr
+                0x08002d64       0x2c ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002d64                USB_OTG_ReadDevAllInEPItr
  .text.USB_OTG_EP0_OutStart
-                0x08002b30       0x70 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                0x08002b30                USB_OTG_EP0_OutStart
+                0x08002d90       0x70 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x08002d90                USB_OTG_EP0_OutStart
  .text.DCD_Init
-                0x08002ba0      0x104 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08002ba0                DCD_Init
+                0x08002e00      0x104 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08002e00                DCD_Init
  .text.DCD_EP_Open
-                0x08002ca4       0xac ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08002ca4                DCD_EP_Open
+                0x08002f04       0xac ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08002f04                DCD_EP_Open
  .text.DCD_EP_Close
-                0x08002d50       0x74 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08002d50                DCD_EP_Close
+                0x08002fb0       0x74 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08002fb0                DCD_EP_Close
  .text.DCD_EP_PrepareRx
-                0x08002dc4       0x84 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08002dc4                DCD_EP_PrepareRx
+                0x08003024       0x84 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08003024                DCD_EP_PrepareRx
  .text.DCD_EP_Tx
-                0x08002e48       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08002e48                DCD_EP_Tx
+                0x080030a8       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x080030a8                DCD_EP_Tx
  .text.DCD_EP_Stall
-                0x08002ec0       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08002ec0                DCD_EP_Stall
+                0x08003120       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08003120                DCD_EP_Stall
  .text.DCD_EP_ClrStall
-                0x08002f38       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08002f38                DCD_EP_ClrStall
+                0x08003198       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08003198                DCD_EP_ClrStall
  .text.DCD_EP_SetAddress
-                0x08002fb0       0x3c ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
-                0x08002fb0                DCD_EP_SetAddress
+                0x08003210       0x3c ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x08003210                DCD_EP_SetAddress
  .text.USBD_OTG_ISR_Handler
-                0x08002fec      0x15c ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
-                0x08002fec                USBD_OTG_ISR_Handler
+                0x0800324c      0x15c ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x0800324c                USBD_OTG_ISR_Handler
  .text.DCD_HandleResume_ISR
-                0x08003148       0x80 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x080033a8       0x80 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.DCD_HandleUSBSuspend_ISR
-                0x080031c8       0xbc ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x08003428       0xbc ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.DCD_HandleInEP_ISR
-                0x08003284      0x19c ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x080034e4      0x19c ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.DCD_HandleOutEP_ISR
-                0x08003420      0x150 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x08003680      0x150 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.DCD_HandleSof_ISR
-                0x08003570       0x34 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x080037d0       0x34 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.DCD_HandleRxStatusQueueLevel_ISR
-                0x080035a4      0x104 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x08003804      0x104 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.DCD_WriteEmptyTxFifo
-                0x080036a8       0xe4 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x08003908       0xe4 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.DCD_HandleUsbReset_ISR
-                0x0800378c      0x120 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x080039ec      0x120 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.DCD_HandleEnumDone_ISR
-                0x080038ac       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x08003b0c       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.DCD_IsoINIncomplete_ISR
-                0x08003924       0x34 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x08003b84       0x34 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.DCD_IsoOUTIncomplete_ISR
-                0x08003958       0x34 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x08003bb8       0x34 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.DCD_ReadDevInEP
-                0x0800398c       0x50 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x08003bec       0x50 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .text.USBD_Init
-                0x080039dc       0x54 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
-                0x080039dc                USBD_Init
+                0x08003c3c       0x54 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08003c3c                USBD_Init
  .text.USBD_DeInit
-                0x08003a30       0x18 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
-                0x08003a30                USBD_DeInit
+                0x08003c90       0x18 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08003c90                USBD_DeInit
  .text.USBD_SetupStage
-                0x08003a48       0x6c ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08003ca8       0x6c ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_DataOutStage
-                0x08003ab4       0xcc ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08003d14       0xcc ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_DataInStage
-                0x08003b80      0x134 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08003de0      0x134 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_RunTestMode
-                0x08003cb4       0x24 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08003f14       0x24 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_Reset
-                0x08003cd8       0x44 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08003f38       0x44 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_Resume
-                0x08003d1c       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08003f7c       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_Suspend
-                0x08003d4c       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08003fac       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_SOF
-                0x08003d7c       0x2c ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08003fdc       0x2c ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_SetCfg
-                0x08003da8       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
-                0x08003da8                USBD_SetCfg
+                0x08004008       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08004008                USBD_SetCfg
  .text.USBD_ClrCfg
-                0x08003dd8       0x28 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
-                0x08003dd8                USBD_ClrCfg
+                0x08004038       0x28 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08004038                USBD_ClrCfg
  .text.USBD_IsoINIncomplete
-                0x08003e00       0x20 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08004060       0x20 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_IsoOUTIncomplete
-                0x08003e20       0x20 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x08004080       0x20 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .text.USBD_CtlSendData
-                0x08003e40       0x40 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                0x08003e40                USBD_CtlSendData
+                0x080040a0       0x40 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x080040a0                USBD_CtlSendData
  .text.USBD_CtlContinueSendData
-                0x08003e80       0x28 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                0x08003e80                USBD_CtlContinueSendData
+                0x080040e0       0x28 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x080040e0                USBD_CtlContinueSendData
  .text.USBD_CtlPrepareRx
-                0x08003ea8       0x40 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                0x08003ea8                USBD_CtlPrepareRx
+                0x08004108       0x40 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x08004108                USBD_CtlPrepareRx
  .text.USBD_CtlContinueRx
-                0x08003ee8       0x28 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                0x08003ee8                USBD_CtlContinueRx
+                0x08004148       0x28 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x08004148                USBD_CtlContinueRx
  .text.USBD_CtlSendStatus
-                0x08003f10       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                0x08003f10                USBD_CtlSendStatus
+                0x08004170       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x08004170                USBD_CtlSendStatus
  .text.USBD_CtlReceiveStatus
-                0x08003f40       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                0x08003f40                USBD_CtlReceiveStatus
+                0x080041a0       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x080041a0                USBD_CtlReceiveStatus
  .text.USBD_StdDevReq
-                0x08003f70       0xa0 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x08003f70                USBD_StdDevReq
+                0x080041d0       0xa0 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x080041d0                USBD_StdDevReq
  .text.USBD_StdItfReq
-                0x08004010       0x68 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x08004010                USBD_StdItfReq
+                0x08004270       0x68 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x08004270                USBD_StdItfReq
  .text.USBD_StdEPReq
-                0x08004078      0x1cc ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x08004078                USBD_StdEPReq
+                0x080042d8      0x1cc ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x080042d8                USBD_StdEPReq
  .text.USBD_GetDescriptor
-                0x08004244      0x1a8 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x080044a4      0x1a8 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .text.USBD_SetAddress
-                0x080043ec       0x7c ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x0800464c       0x7c ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .text.USBD_SetConfig
-                0x08004468       0xf4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x080046c8       0xf4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .text.USBD_GetConfig
-                0x0800455c       0x60 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x080047bc       0x60 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .text.USBD_GetStatus
-                0x080045bc       0x54 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x0800481c       0x54 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .text.USBD_SetFeature
-                0x08004610       0xe4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x08004870       0xe4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .text.USBD_ClrFeature
-                0x080046f4       0x50 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x08004954       0x50 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .text.USBD_ParseSetupRequest
-                0x08004744       0x90 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x08004744                USBD_ParseSetupRequest
+                0x080049a4       0x90 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x080049a4                USBD_ParseSetupRequest
  .text.USBD_CtlError
-                0x080047d4       0x28 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x080047d4                USBD_CtlError
+                0x08004a34       0x28 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x08004a34                USBD_CtlError
  .text.USBD_GetString
-                0x080047fc       0x84 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x080047fc                USBD_GetString
+                0x08004a5c       0x84 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x08004a5c                USBD_GetString
  .text.USBD_GetLen
-                0x08004880       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x08004ae0       0x30 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .text.usbd_cdc_Init
-                0x080048b0       0x6c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x080048b0                usbd_cdc_Init
+                0x08004b10       0x6c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x08004b10                usbd_cdc_Init
  .text.usbd_cdc_DeInit
-                0x0800491c       0x38 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x0800491c                usbd_cdc_DeInit
+                0x08004b7c       0x38 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x08004b7c                usbd_cdc_DeInit
  .text.usbd_cdc_Setup
-                0x08004954      0x100 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x08004954                usbd_cdc_Setup
+                0x08004bb4      0x100 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x08004bb4                usbd_cdc_Setup
  .text.usbd_cdc_EP0_RxReady
-                0x08004a54       0x44 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x08004a54                usbd_cdc_EP0_RxReady
+                0x08004cb4       0x44 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x08004cb4                usbd_cdc_EP0_RxReady
  .text.usbd_cdc_DataIn
-                0x08004a98       0xc0 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x08004a98                usbd_cdc_DataIn
+                0x08004cf8       0xc0 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x08004cf8                usbd_cdc_DataIn
  .text.usbd_cdc_DataOut
-                0x08004b58       0x4c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x08004b58                usbd_cdc_DataOut
+                0x08004db8       0x4c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x08004db8                usbd_cdc_DataOut
  .text.usbd_cdc_SOF
-                0x08004ba4       0x30 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x08004ba4                usbd_cdc_SOF
+                0x08004e04       0x30 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x08004e04                usbd_cdc_SOF
  .text.Handle_USBAsynchXfer
-                0x08004bd4       0xe8 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x08004e34       0xe8 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .text.USBD_cdc_GetCfgDesc
-                0x08004cbc       0x24 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x08004f1c       0x24 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .text.VCP_Init
-                0x08004ce0       0x30 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+                0x08004f40       0x10 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .text.VCP_DeInit
-                0x08004d10       0x10 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+                0x08004f50       0x10 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .text.VCP_Ctrl
-                0x08004d20      0x158 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+                0x08004f60      0x158 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .text.VCP_DataTx
-                0x08004e78       0x60 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+                0x080050b8       0x60 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .text.VCP_DataRx
-                0x08004ed8       0x6c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+                0x08005118       0x1c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .text.UB_VCP_DataTx
-                0x08004f44       0x40 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
-                0x08004f44                UB_VCP_DataTx
- .text.VCP_DataRxE
-                0x08004f84       0x80 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
-                0x08004f84                VCP_DataRxE
+                0x08005134       0x64 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+                0x08005134                UB_VCP_DataTx
  .text.NVIC_PriorityGroupConfig
-                0x08005004       0x24 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
-                0x08005004                NVIC_PriorityGroupConfig
+                0x08005198       0x24 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+                0x08005198                NVIC_PriorityGroupConfig
  .text.NVIC_Init
-                0x08005028       0xc0 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
-                0x08005028                NVIC_Init
+                0x080051bc       0xc0 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+                0x080051bc                NVIC_Init
  .text.GPIO_Init
-                0x080050e8      0x11c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x080050e8                GPIO_Init
+                0x0800527c      0x11c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x0800527c                GPIO_Init
  .text.GPIO_SetBits
-                0x08005204       0x1c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08005204                GPIO_SetBits
+                0x08005398       0x1c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x08005398                GPIO_SetBits
  .text.GPIO_ResetBits
-                0x08005220       0x1c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08005220                GPIO_ResetBits
+                0x080053b4       0x1c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x080053b4                GPIO_ResetBits
  .text.GPIO_PinAFConfig
-                0x0800523c       0x90 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x0800523c                GPIO_PinAFConfig
+                0x080053d0       0x90 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x080053d0                GPIO_PinAFConfig
  .text.RCC_AHB1PeriphClockCmd
-                0x080052cc       0x3c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x080052cc                RCC_AHB1PeriphClockCmd
+                0x08005460       0x3c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08005460                RCC_AHB1PeriphClockCmd
  .text.RCC_AHB2PeriphClockCmd
-                0x08005308       0x3c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08005308                RCC_AHB2PeriphClockCmd
+                0x0800549c       0x3c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x0800549c                RCC_AHB2PeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x08005344       0x3c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08005344                RCC_APB1PeriphClockCmd
+                0x080054d8       0x3c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x080054d8                RCC_APB1PeriphClockCmd
  .text.RCC_APB2PeriphClockCmd
-                0x08005380       0x3c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08005380                RCC_APB2PeriphClockCmd
+                0x08005514       0x3c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08005514                RCC_APB2PeriphClockCmd
  .text.RCC_APB1PeriphResetCmd
-                0x080053bc       0x3c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x080053bc                RCC_APB1PeriphResetCmd
+                0x08005550       0x3c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x08005550                RCC_APB1PeriphResetCmd
  .text.SystemInit
-                0x080053f8       0x58 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
-                0x080053f8                SystemInit
+                0x0800558c       0x68 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+                0x0800558c                SystemInit
  .text.SetSysClock
-                0x08005450       0xf0 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+                0x080055f4       0xf4 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
  .text.__libc_init_array
-                0x08005540       0x50 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-init.o)
-                0x08005540                __libc_init_array
+                0x080056e8       0x50 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-init.o)
+                0x080056e8                __libc_init_array
  .text.startup.register_fini
-                0x08005590       0x14 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x080055a4        0xc d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-atexit.o)
-                0x080055a4                atexit
+                0x08005738       0x14 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x0800574c        0xc d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-atexit.o)
+                0x0800574c                atexit
  .text.__libc_fini_array
-                0x080055b0       0x2c d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-fini.o)
-                0x080055b0                __libc_fini_array
+                0x08005758       0x2c d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-fini.o)
+                0x08005758                __libc_fini_array
  .text.__register_exitproc
-                0x080055dc       0xa4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__atexit.o)
-                0x080055dc                __register_exitproc
+                0x08005784       0xa4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__atexit.o)
+                0x08005784                __register_exitproc
  *(.rodata)
- .rodata        0x08005680       0x56 ./src/usb-cdc/usbd_desc.o
+ .rodata        0x08005828       0x56 ./src/usb-cdc/usbd_desc.o
  *(.rodata*)
- *fill*         0x080056d6        0x2 
+ *fill*         0x0800587e        0x2 
  .rodata.CRCTable
-                0x080056d8      0x400 ./src/utils/utils.o
+                0x08005880      0x400 ./src/utils/utils.o
  .rodata.str1.4
-                0x08005ad8        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-impure.o)
+                0x08005c80        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-impure.o)
                                   0x2 (size before relaxing)
  .rodata._global_impure_ptr
-                0x08005adc        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-impure.o)
-                0x08005adc                _global_impure_ptr
+                0x08005c84        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-impure.o)
+                0x08005c84                _global_impure_ptr
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08005ae0        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
+ .eh_frame      0x08005c88        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
  *(.init)
- .init          0x08005ae0        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crti.o
-                0x08005ae0                _init
- .init          0x08005ae4        0x8 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtn.o
+ .init          0x08005c88        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
+                0x08005c88                _init
+ .init          0x08005c8c        0x8 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
  *(.fini)
- .fini          0x08005aec        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crti.o
-                0x08005aec                _fini
- .fini          0x08005af0        0x8 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtn.o
-                0x08005af8                . = ALIGN (0x4)
-                0x08005af8                _etext = .
+ .fini          0x08005c94        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
+                0x08005c94                _fini
+ .fini          0x08005c98        0x8 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
+                0x08005ca0                . = ALIGN (0x4)
+                0x08005ca0                _etext = .
 
-.vfp11_veneer   0x08005af8        0x0
+.vfp11_veneer   0x08005ca0        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x08005af8        0x0
+.v4_bx          0x08005ca0        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x08005af8        0x0
- .iplt          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
+.iplt           0x08005ca0        0x0
+ .iplt          0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
 
-.rel.dyn        0x08005af8        0x0
- .rel.iplt      0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
+.rel.dyn        0x08005ca0        0x0
+ .rel.iplt      0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08005af8        0x0
-                0x08005af8                __exidx_start = .
+.ARM            0x08005ca0        0x0
+                0x08005ca0                __exidx_start = .
  *(.ARM.exidx*)
-                0x08005af8                __exidx_end = .
+                0x08005ca0                __exidx_end = .
 
-.preinit_array  0x08005af8        0x0
-                0x08005af8                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x08005ca0        0x0
+                0x08005ca0                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x08005af8                PROVIDE (__preinit_array_end, .)
+                0x08005ca0                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x08005af8        0x8
-                0x08005af8                PROVIDE (__init_array_start, .)
+.init_array     0x08005ca0        0x8
+                0x08005ca0                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  .init_array.00000
-                0x08005af8        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__call_atexit.o)
+                0x08005ca0        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x08005afc        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
-                0x08005b00                PROVIDE (__init_array_end, .)
+ .init_array    0x08005ca4        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
+                0x08005ca8                PROVIDE (__init_array_end, .)
 
-.fini_array     0x08005b00        0x4
-                0x08005b00                PROVIDE (__fini_array_start, .)
+.fini_array     0x08005ca8        0x4
+                0x08005ca8                PROVIDE (__fini_array_start, .)
  *(.fini_array*)
- .fini_array    0x08005b00        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
+ .fini_array    0x08005ca8        0x4 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
  *(SORT(.fini_array.*))
-                0x08005b04                PROVIDE (__fini_array_end, .)
-                0x08005b04                _sidata = .
+                0x08005cac                PROVIDE (__fini_array_end, .)
+                0x08005cac                _sidata = .
 
-.data           0x20000000      0x550 load address 0x08005b04
+.data           0x20000000      0x550 load address 0x08005cac
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -1877,97 +1867,95 @@ LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-
                 0x20000110                VCP_fops
  *fill*         0x20000124        0x4 
  .data.impure_data
-                0x20000128      0x428 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-impure.o)
+                0x20000128      0x428 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-impure.o)
                 0x20000550                . = ALIGN (0x4)
                 0x20000550                _edata = .
 
-.jcr            0x20000550        0x0 load address 0x08006054
- .jcr           0x20000550        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
+.jcr            0x20000550        0x0 load address 0x080061fc
+ .jcr           0x20000550        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
 
-.igot.plt       0x20000550        0x0 load address 0x08006054
- .igot.plt      0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
+.igot.plt       0x20000550        0x0 load address 0x080061fc
+ .igot.plt      0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
                 0x20000550                . = ALIGN (0x4)
 
-.bss            0x20000550    0x10fc4 load address 0x08006054
+.bss            0x20000550    0x10f64 load address 0x080061fc
                 0x20000550                _sbss = .
                 0x20000550                __bss_start__ = _sbss
  *(.bss)
- .bss           0x20000550       0x1c d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
+ .bss           0x20000550       0x1c d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
  *(.bss*)
- .bss.clBlack   0x2000056c        0x4 ./src/main.o
-                0x2000056c                clBlack
+ .bss.USBRecv   0x2000056c       0x1c ./src/usb-cdc/link.o
+ .bss.clBlack   0x20000588        0x4 ./src/main.o
+                0x20000588                clBlack
+ .bss.Mode      0x2000058c        0x1 ./src/main.o
+ .bss.Status    0x2000058d        0x1 ./src/main.o
+ *fill*         0x2000058e        0x2 
+ .bss.DendyLED  0x20000590        0x4 ./src/main.o
+ .bss.SegaLED   0x20000594        0x4 ./src/main.o
+ .bss.BSize     0x20000598        0x4 ./src/main.o
+ .bss.Cnt       0x2000059c        0x4 ./src/main.o
+ .bss.CRC32     0x200005a0        0x4 ./src/main.o
+ .bss.Adr       0x200005a4        0x4 ./src/main.o
+ .bss.Size      0x200005a8        0x4 ./src/main.o
  .bss.USBD_ep_status
-                0x20000570        0x4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x20000570                USBD_ep_status
+                0x200005ac        0x4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x200005ac                USBD_ep_status
  .bss.USBD_default_cfg
-                0x20000574        0x4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x20000574                USBD_default_cfg
+                0x200005b0        0x4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x200005b0                USBD_default_cfg
  .bss.USBD_cfg_status
-                0x20000578        0x4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x20000578                USBD_cfg_status
- .bss.cfgidx.7015
-                0x2000057c        0x1 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
- *fill*         0x2000057d        0x3 
+                0x200005b4        0x4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x200005b4                USBD_cfg_status
+ .bss.cfgidx.7016
+                0x200005b8        0x1 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+ *fill*         0x200005b9        0x3 
  .bss.usbd_cdc_AltSet
-                0x20000580        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x200005bc        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .bss.APP_Rx_ptr_in
-                0x20000584        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x20000584                APP_Rx_ptr_in
+                0x200005c0        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x200005c0                APP_Rx_ptr_in
  .bss.APP_Rx_ptr_out
-                0x20000588        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x20000588                APP_Rx_ptr_out
+                0x200005c4        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x200005c4                APP_Rx_ptr_out
  .bss.APP_Rx_length
-                0x2000058c        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x2000058c                APP_Rx_length
+                0x200005c8        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x200005c8                APP_Rx_length
  .bss.USB_Tx_State
-                0x20000590        0x1 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x20000590                USB_Tx_State
- *fill*         0x20000591        0x3 
- .bss.cdcLen    0x20000594        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
- .bss.FrameCount.7005
-                0x20000598        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x200005cc        0x1 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x200005cc                USB_Tx_State
+ *fill*         0x200005cd        0x3 
+ .bss.cdcLen    0x200005d0        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+ .bss.FrameCount.7007
+                0x200005d4        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  *(COMMON)
- COMMON         0x2000059c      0x5f8 ./src/usb-cdc/link.o
-                0x2000059c                USB_CDC_STATUS
-                0x200005a0                USB_OTG_dev
- COMMON         0x20000b94    0x10030 ./src/main.o
-                0x20000b94                CRC32
-                0x20000b98                Data_Buf
-                0x20010ba8                BSize
-                0x20010bac                Adr
-                0x20010bb0                Cnt
-                0x20010bb4                Mode
-                0x20010bb8                Size
-                0x20010bbc                DendyLED
-                0x20010bc0                SegaLED
- COMMON         0x20010bc4        0x4 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
-                0x20010bc4                SET_TEST_MODE
- COMMON         0x20010bc8       0x32 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x20010bc8                USBD_StrDesc
- *fill*         0x20010bfa        0x2 
- COMMON         0x20010bfc      0x88c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x20010bfc                usbd_cdc_OtherCfgDesc
-                0x20010c40                USB_Rx_Buffer
-                0x20010c80                CmdBuff
-                0x20010c88                APP_Rx_Buffer
- COMMON         0x20011488       0x8c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
-                0x20011488                APP_tx_end_cmd
-                0x2001148c                APP_Tx_Buffer
-                0x2001150c                APP_tx_ptr_tail
-                0x20011510                APP_tx_ptr_head
-                0x20011514                . = ALIGN (0x4)
-                0x20011514                _ebss = .
-                0x20011514                __bss_end__ = _ebss
+ COMMON         0x200005d8    0x10618 ./src/usb-cdc/link.o
+                0x200005d8                Data_Buf
+                0x200105e8                Ans_Buf
+                0x200105f8                USB_CDC_STATUS
+                0x200105fc                USB_OTG_dev
+ COMMON         0x20010bf0        0x4 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x20010bf0                SET_TEST_MODE
+ COMMON         0x20010bf4       0x32 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x20010bf4                USBD_StrDesc
+ *fill*         0x20010c26        0x2 
+ COMMON         0x20010c28      0x88c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x20010c28                usbd_cdc_OtherCfgDesc
+                0x20010c6c                USB_Rx_Buffer
+                0x20010cac                CmdBuff
+                0x20010cb4                APP_Rx_Buffer
+                0x200114b4                . = ALIGN (0x4)
+                0x200114b4                _ebss = .
+                0x200114b4                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20011514      0x400 load address 0x08017018
-                0x20011514                . = ALIGN (0x4)
-                0x20011514                PROVIDE (end, .)
-                0x20011514                PROVIDE (_end, .)
-                0x20011514                . = (. + _Min_Heap_Size)
-                0x20011914                . = (. + _Min_Stack_Size)
- *fill*         0x20011514      0x400 
-                0x20011914                . = ALIGN (0x4)
+                0x200114b4      0x400 load address 0x08017160
+                0x200114b4                . = ALIGN (0x4)
+                0x200114b4                PROVIDE (end, .)
+                0x200114b4                PROVIDE (_end, .)
+                0x200114b4                . = (. + _Min_Heap_Size)
+                0x200118b4                . = (. + _Min_Stack_Size)
+ *fill*         0x200114b4      0x400 
+                0x200118b4                . = ALIGN (0x4)
 
 .memory_b1_text
  *(.mb1text)
@@ -1981,117 +1969,117 @@ LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-
  libgcc.a(*)
 
 .ARM.attributes
-                0x00000000       0x2a
+                0x00000000       0x30
  *(.ARM.attributes)
  .ARM.attributes
-                0x00000000       0x1e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crti.o
+                0x00000000       0x22 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
  .ARM.attributes
-                0x0000001e       0x2e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtbegin.o
+                0x00000022       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
  .ARM.attributes
-                0x0000004c       0x33 ./src/utils/utils.o
+                0x00000056       0x39 ./src/utils/utils.o
  .ARM.attributes
-                0x0000007f       0x33 ./src/usb-cdc/link.o
+                0x0000008f       0x39 ./src/usb-cdc/link.o
  .ARM.attributes
-                0x000000b2       0x33 ./src/usb-cdc/usbd_desc.o
+                0x000000c8       0x39 ./src/usb-cdc/usbd_desc.o
  .ARM.attributes
-                0x000000e5       0x33 ./src/usb-cdc/usbd_usr.o
+                0x00000101       0x39 ./src/usb-cdc/usbd_usr.o
  .ARM.attributes
-                0x00000118       0x33 ./src/dumper/dendy.o
+                0x0000013a       0x39 ./src/dumper/dendy.o
  .ARM.attributes
-                0x0000014b       0x33 ./src/main.o
+                0x00000173       0x39 ./src/main.o
  .ARM.attributes
-                0x0000017e       0x21 ./src/startup_stm32f4xx.o
+                0x000001ac       0x21 ./src/startup_stm32f4xx.o
  .ARM.attributes
-                0x0000019f       0x33 ./src/stm32f4xx_it.o
+                0x000001cd       0x39 ./src/stm32f4xx_it.o
  .ARM.attributes
-                0x000001d2       0x33 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+                0x00000206       0x39 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
  .ARM.attributes
-                0x00000205       0x33 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x0000023f       0x39 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
  .ARM.attributes
-                0x00000238       0x33 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x00000278       0x39 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
  .ARM.attributes
-                0x0000026b       0x33 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x000002b1       0x39 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .ARM.attributes
-                0x0000029e       0x33 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x000002ea       0x39 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .ARM.attributes
-                0x000002d1       0x33 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x00000323       0x39 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
  .ARM.attributes
-                0x00000304       0x33 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x0000035c       0x39 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .ARM.attributes
-                0x00000337       0x33 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x00000395       0x39 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .ARM.attributes
-                0x0000036a       0x33 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+                0x000003ce       0x39 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .ARM.attributes
-                0x0000039d       0x33 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+                0x00000407       0x39 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
  .ARM.attributes
-                0x000003d0       0x33 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x00000440       0x39 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
  .ARM.attributes
-                0x00000403       0x33 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x00000479       0x39 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
  .ARM.attributes
-                0x00000436       0x33 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+                0x000004b2       0x39 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
  .ARM.attributes
-                0x00000469       0x2e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-impure.o)
+                0x000004eb       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000497       0x2e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-init.o)
+                0x0000051f       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-init.o)
  .ARM.attributes
-                0x000004c5       0x2e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__call_atexit.o)
+                0x00000553       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__call_atexit.o)
  .ARM.attributes
-                0x000004f3       0x2e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-atexit.o)
+                0x00000587       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-atexit.o)
  .ARM.attributes
-                0x00000521       0x2e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-fini.o)
+                0x000005bb       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-fini.o)
  .ARM.attributes
-                0x0000054f       0x2e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__atexit.o)
+                0x000005ef       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__atexit.o)
  .ARM.attributes
-                0x0000057d       0x1e d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crtn.o
+                0x00000623       0x22 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
 OUTPUT(SuperDumperFW.elf elf32-littlearm)
 
-.debug_info     0x00000000     0xf71e
+.debug_info     0x00000000    0x1019e
  .debug_info    0x00000000      0x17b ./src/utils/utils.o
- .debug_info    0x0000017b      0xd6c ./src/usb-cdc/link.o
- .debug_info    0x00000ee7      0x365 ./src/usb-cdc/usbd_desc.o
- .debug_info    0x0000124c      0xbad ./src/usb-cdc/usbd_usr.o
- .debug_info    0x00001df9      0x626 ./src/dumper/dendy.o
- .debug_info    0x0000241f      0xed6 ./src/main.o
- .debug_info    0x000032f5       0x65 ./src/startup_stm32f4xx.o
- .debug_info    0x0000335a      0x137 ./src/stm32f4xx_it.o
- .debug_info    0x00003491      0xfd7 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
- .debug_info    0x00004468     0x24f1 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
- .debug_info    0x00006959     0x109e ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
- .debug_info    0x000079f7     0x1daa ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
- .debug_info    0x000097a1      0xfeb ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
- .debug_info    0x0000a78c      0xce0 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
- .debug_info    0x0000b46c      0xfe4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
- .debug_info    0x0000c450      0xefd ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
- .debug_info    0x0000d34d      0x457 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
- .debug_info    0x0000d7a4      0x545 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
- .debug_info    0x0000dce9      0x60d ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_info    0x0000e2f6      0xe4a ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_info    0x0000f140      0x5de ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+ .debug_info    0x0000017b      0xd19 ./src/usb-cdc/link.o
+ .debug_info    0x00000e94      0x365 ./src/usb-cdc/usbd_desc.o
+ .debug_info    0x000011f9      0xbf2 ./src/usb-cdc/usbd_usr.o
+ .debug_info    0x00001deb      0x714 ./src/dumper/dendy.o
+ .debug_info    0x000024ff      0xf4c ./src/main.o
+ .debug_info    0x0000344b       0x65 ./src/startup_stm32f4xx.o
+ .debug_info    0x000034b0      0x104 ./src/stm32f4xx_it.o
+ .debug_info    0x000035b4      0xfd7 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+ .debug_info    0x0000458b     0x24f1 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+ .debug_info    0x00006a7c     0x109e ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+ .debug_info    0x00007b1a     0x1daa ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+ .debug_info    0x000098c4      0xfeb ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+ .debug_info    0x0000a8af      0xce0 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+ .debug_info    0x0000b58f      0xfe4 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+ .debug_info    0x0000c573      0xefd ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+ .debug_info    0x0000d470      0xdb4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+ .debug_info    0x0000e224      0x545 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_info    0x0000e769      0x60d ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_info    0x0000ed76      0xe4a ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_info    0x0000fbc0      0x5de ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
 
-.debug_abbrev   0x00000000     0x23b2
+.debug_abbrev   0x00000000     0x24de
  .debug_abbrev  0x00000000       0xbb ./src/utils/utils.o
- .debug_abbrev  0x000000bb      0x22b ./src/usb-cdc/link.o
- .debug_abbrev  0x000002e6      0x106 ./src/usb-cdc/usbd_desc.o
- .debug_abbrev  0x000003ec      0x1a1 ./src/usb-cdc/usbd_usr.o
- .debug_abbrev  0x0000058d      0x164 ./src/dumper/dendy.o
- .debug_abbrev  0x000006f1      0x221 ./src/main.o
- .debug_abbrev  0x00000912       0x12 ./src/startup_stm32f4xx.o
- .debug_abbrev  0x00000924       0x6a ./src/stm32f4xx_it.o
- .debug_abbrev  0x0000098e      0x216 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
- .debug_abbrev  0x00000ba4      0x2ec ./lib/STM32_USB_OTG_Driver/src/usb_core.o
- .debug_abbrev  0x00000e90      0x25e ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
- .debug_abbrev  0x000010ee      0x260 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
- .debug_abbrev  0x0000134e      0x27a ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
- .debug_abbrev  0x000015c8      0x1b4 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
- .debug_abbrev  0x0000177c      0x2a9 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
- .debug_abbrev  0x00001a25      0x20d ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
- .debug_abbrev  0x00001c32      0x194 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
- .debug_abbrev  0x00001dc6      0x14a ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
- .debug_abbrev  0x00001f10      0x1a8 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_abbrev  0x000020b8      0x1bf ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_abbrev  0x00002277      0x13b ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+ .debug_abbrev  0x000000bb      0x23d ./src/usb-cdc/link.o
+ .debug_abbrev  0x000002f8      0x106 ./src/usb-cdc/usbd_desc.o
+ .debug_abbrev  0x000003fe      0x1aa ./src/usb-cdc/usbd_usr.o
+ .debug_abbrev  0x000005a8      0x19c ./src/dumper/dendy.o
+ .debug_abbrev  0x00000744      0x257 ./src/main.o
+ .debug_abbrev  0x0000099b       0x12 ./src/startup_stm32f4xx.o
+ .debug_abbrev  0x000009ad       0x6a ./src/stm32f4xx_it.o
+ .debug_abbrev  0x00000a17      0x216 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+ .debug_abbrev  0x00000c2d      0x2ec ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+ .debug_abbrev  0x00000f19      0x25e ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+ .debug_abbrev  0x00001177      0x260 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+ .debug_abbrev  0x000013d7      0x27a ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+ .debug_abbrev  0x00001651      0x1b4 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+ .debug_abbrev  0x00001805      0x2a9 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+ .debug_abbrev  0x00001aae      0x20d ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+ .debug_abbrev  0x00001cbb      0x237 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+ .debug_abbrev  0x00001ef2      0x14a ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_abbrev  0x0000203c      0x1a8 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_abbrev  0x000021e4      0x1bf ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_abbrev  0x000023a3      0x13b ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
 
-.debug_aranges  0x00000000      0x978
+.debug_aranges  0x00000000      0x970
  .debug_aranges
                 0x00000000       0x30 ./src/utils/utils.o
  .debug_aranges
@@ -2101,202 +2089,200 @@ OUTPUT(SuperDumperFW.elf elf32-littlearm)
  .debug_aranges
                 0x000000c8       0x50 ./src/usb-cdc/usbd_usr.o
  .debug_aranges
-                0x00000118       0x50 ./src/dumper/dendy.o
+                0x00000118       0x68 ./src/dumper/dendy.o
  .debug_aranges
-                0x00000168       0x38 ./src/main.o
+                0x00000180       0x40 ./src/main.o
  .debug_aranges
-                0x000001a0       0x28 ./src/startup_stm32f4xx.o
+                0x000001c0       0x28 ./src/startup_stm32f4xx.o
  .debug_aranges
-                0x000001c8       0x60 ./src/stm32f4xx_it.o
+                0x000001e8       0x48 ./src/stm32f4xx_it.o
  .debug_aranges
-                0x00000228       0x38 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+                0x00000230       0x38 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
  .debug_aranges
-                0x00000260      0x140 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                0x00000268      0x140 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
  .debug_aranges
-                0x000003a0       0x88 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+                0x000003a8       0x88 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
  .debug_aranges
-                0x00000428       0x80 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                0x00000430       0x80 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
  .debug_aranges
-                0x000004a8       0x88 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x000004b0       0x88 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
  .debug_aranges
-                0x00000530       0x50 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                0x00000538       0x50 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
  .debug_aranges
-                0x00000580       0x88 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x00000588       0x88 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
  .debug_aranges
-                0x00000608       0x60 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x00000610       0x60 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  .debug_aranges
-                0x00000668       0x58 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+                0x00000670       0x48 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
  .debug_aranges
-                0x000006c0       0x40 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+                0x000006b8       0x40 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
  .debug_aranges
-                0x00000700       0x88 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x000006f8       0x88 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
  .debug_aranges
-                0x00000788      0x1c0 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x00000780      0x1c0 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
  .debug_aranges
-                0x00000948       0x30 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+                0x00000940       0x30 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
 
-.debug_ranges   0x00000000      0x830
+.debug_ranges   0x00000000      0x828
  .debug_ranges  0x00000000       0x20 ./src/utils/utils.o
  .debug_ranges  0x00000020       0x38 ./src/usb-cdc/link.o
  .debug_ranges  0x00000058       0x40 ./src/usb-cdc/usbd_desc.o
  .debug_ranges  0x00000098       0x40 ./src/usb-cdc/usbd_usr.o
- .debug_ranges  0x000000d8       0x40 ./src/dumper/dendy.o
- .debug_ranges  0x00000118       0x28 ./src/main.o
- .debug_ranges  0x00000140       0x20 ./src/startup_stm32f4xx.o
- .debug_ranges  0x00000160       0x50 ./src/stm32f4xx_it.o
- .debug_ranges  0x000001b0       0x28 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
- .debug_ranges  0x000001d8      0x130 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
- .debug_ranges  0x00000308       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
- .debug_ranges  0x00000380       0x70 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
- .debug_ranges  0x000003f0       0x78 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
- .debug_ranges  0x00000468       0x40 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
- .debug_ranges  0x000004a8       0x78 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
- .debug_ranges  0x00000520       0x50 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
- .debug_ranges  0x00000570       0x48 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
- .debug_ranges  0x000005b8       0x30 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
- .debug_ranges  0x000005e8       0x78 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_ranges  0x00000660      0x1b0 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_ranges  0x00000810       0x20 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+ .debug_ranges  0x000000d8       0x58 ./src/dumper/dendy.o
+ .debug_ranges  0x00000130       0x30 ./src/main.o
+ .debug_ranges  0x00000160       0x20 ./src/startup_stm32f4xx.o
+ .debug_ranges  0x00000180       0x38 ./src/stm32f4xx_it.o
+ .debug_ranges  0x000001b8       0x28 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+ .debug_ranges  0x000001e0      0x130 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+ .debug_ranges  0x00000310       0x78 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+ .debug_ranges  0x00000388       0x70 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+ .debug_ranges  0x000003f8       0x78 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+ .debug_ranges  0x00000470       0x40 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+ .debug_ranges  0x000004b0       0x78 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+ .debug_ranges  0x00000528       0x50 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+ .debug_ranges  0x00000578       0x38 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+ .debug_ranges  0x000005b0       0x30 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_ranges  0x000005e0       0x78 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_ranges  0x00000658      0x1b0 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_ranges  0x00000808       0x20 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
 
-.debug_macro    0x00000000     0xeada
+.debug_macro    0x00000000     0xea38
  .debug_macro   0x00000000       0xe0 ./src/utils/utils.o
- .debug_macro   0x000000e0      0x886 ./src/utils/utils.o
- .debug_macro   0x00000966       0x22 ./src/utils/utils.o
- .debug_macro   0x00000988       0x44 ./src/utils/utils.o
- .debug_macro   0x000009cc       0x58 ./src/utils/utils.o
- .debug_macro   0x00000a24       0x22 ./src/utils/utils.o
- .debug_macro   0x00000a46      0x1df ./src/utils/utils.o
- .debug_macro   0x00000c25       0x6b ./src/utils/utils.o
- .debug_macro   0x00000c90       0x3b ./src/utils/utils.o
- .debug_macro   0x00000ccb       0x34 ./src/utils/utils.o
- .debug_macro   0x00000cff       0x26 ./src/utils/utils.o
- .debug_macro   0x00000d25      0xe43 ./src/utils/utils.o
- .debug_macro   0x00001b68     0x9159 ./src/utils/utils.o
- .debug_macro   0x0000acc1      0x2f5 ./src/utils/utils.o
- .debug_macro   0x0000afb6      0x651 ./src/utils/utils.o
- .debug_macro   0x0000b607       0x82 ./src/utils/utils.o
- .debug_macro   0x0000b689       0x35 ./src/utils/utils.o
- .debug_macro   0x0000b6be      0x194 ./src/usb-cdc/link.o
- .debug_macro   0x0000b852       0x4c ./src/usb-cdc/link.o
- .debug_macro   0x0000b89e       0x4f ./src/usb-cdc/link.o
- .debug_macro   0x0000b8ed       0x76 ./src/usb-cdc/link.o
- .debug_macro   0x0000b963      0x20f ./src/usb-cdc/link.o
- .debug_macro   0x0000bb72       0x64 ./src/usb-cdc/link.o
- .debug_macro   0x0000bbd6      0x12a ./src/usb-cdc/link.o
- .debug_macro   0x0000bd00       0x3a ./src/usb-cdc/link.o
- .debug_macro   0x0000bd3a       0x88 ./src/usb-cdc/link.o
- .debug_macro   0x0000bdc2       0x2e ./src/usb-cdc/link.o
- .debug_macro   0x0000bdf0       0x22 ./src/usb-cdc/link.o
- .debug_macro   0x0000be12      0x195 ./src/usb-cdc/usbd_desc.o
- .debug_macro   0x0000bfa7       0x49 ./src/usb-cdc/usbd_desc.o
- .debug_macro   0x0000bff0      0x124 ./src/usb-cdc/usbd_desc.o
- .debug_macro   0x0000c114      0x197 ./src/usb-cdc/usbd_usr.o
- .debug_macro   0x0000c2ab       0xe5 ./src/dumper/dendy.o
- .debug_macro   0x0000c390       0x9a ./src/dumper/dendy.o
- .debug_macro   0x0000c42a      0x29c ./src/main.o
- .debug_macro   0x0000c6c6       0x58 ./src/main.o
- .debug_macro   0x0000c71e       0x35 ./src/main.o
- .debug_macro   0x0000c753       0x9c ./src/main.o
- .debug_macro   0x0000c7ef       0x16 ./src/main.o
- .debug_macro   0x0000c805       0x97 ./src/main.o
- .debug_macro   0x0000c89c      0x27a ./src/main.o
- .debug_macro   0x0000cb16       0xf6 ./src/main.o
- .debug_macro   0x0000cc0c       0x10 ./src/main.o
- .debug_macro   0x0000cc1c       0x52 ./src/main.o
- .debug_macro   0x0000cc6e       0x16 ./src/main.o
- .debug_macro   0x0000cc84       0x43 ./src/main.o
- .debug_macro   0x0000ccc7      0x180 ./src/main.o
- .debug_macro   0x0000ce47       0x10 ./src/main.o
- .debug_macro   0x0000ce57       0x22 ./src/main.o
- .debug_macro   0x0000ce79       0xbe ./src/main.o
- .debug_macro   0x0000cf37       0x16 ./src/main.o
- .debug_macro   0x0000cf4d      0x197 ./src/main.o
- .debug_macro   0x0000d0e4      0x11e ./src/main.o
- .debug_macro   0x0000d202       0x10 ./src/main.o
- .debug_macro   0x0000d212       0xa0 ./src/main.o
- .debug_macro   0x0000d2b2       0xe1 ./src/stm32f4xx_it.o
- .debug_macro   0x0000d393      0x124 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
- .debug_macro   0x0000d4b7       0x40 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
- .debug_macro   0x0000d4f7      0x115 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
- .debug_macro   0x0000d60c      0x120 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
- .debug_macro   0x0000d72c      0x125 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
- .debug_macro   0x0000d851      0x171 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
- .debug_macro   0x0000d9c2      0x146 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
- .debug_macro   0x0000db08      0x163 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
- .debug_macro   0x0000dc6b       0x2e ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
- .debug_macro   0x0000dc99      0x184 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
- .debug_macro   0x0000de1d      0x17f ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
- .debug_macro   0x0000df9c       0xe7 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
- .debug_macro   0x0000e083       0x7c ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
- .debug_macro   0x0000e0ff       0xe1 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_macro   0x0000e1e0      0x64b ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_macro   0x0000e82b      0x1b4 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_macro   0x0000e9df       0xfb ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+ .debug_macro   0x000000e0      0x88c ./src/utils/utils.o
+ .debug_macro   0x0000096c       0x22 ./src/utils/utils.o
+ .debug_macro   0x0000098e       0x44 ./src/utils/utils.o
+ .debug_macro   0x000009d2       0x58 ./src/utils/utils.o
+ .debug_macro   0x00000a2a       0x22 ./src/utils/utils.o
+ .debug_macro   0x00000a4c      0x1df ./src/utils/utils.o
+ .debug_macro   0x00000c2b       0x6b ./src/utils/utils.o
+ .debug_macro   0x00000c96       0x3b ./src/utils/utils.o
+ .debug_macro   0x00000cd1       0x34 ./src/utils/utils.o
+ .debug_macro   0x00000d05       0x26 ./src/utils/utils.o
+ .debug_macro   0x00000d2b      0xe43 ./src/utils/utils.o
+ .debug_macro   0x00001b6e     0x9159 ./src/utils/utils.o
+ .debug_macro   0x0000acc7      0x2f5 ./src/utils/utils.o
+ .debug_macro   0x0000afbc      0x651 ./src/utils/utils.o
+ .debug_macro   0x0000b60d       0x82 ./src/utils/utils.o
+ .debug_macro   0x0000b68f       0x35 ./src/utils/utils.o
+ .debug_macro   0x0000b6c4      0x194 ./src/usb-cdc/link.o
+ .debug_macro   0x0000b858       0x4c ./src/usb-cdc/link.o
+ .debug_macro   0x0000b8a4       0x4f ./src/usb-cdc/link.o
+ .debug_macro   0x0000b8f3       0x76 ./src/usb-cdc/link.o
+ .debug_macro   0x0000b969      0x20f ./src/usb-cdc/link.o
+ .debug_macro   0x0000bb78       0x64 ./src/usb-cdc/link.o
+ .debug_macro   0x0000bbdc      0x12a ./src/usb-cdc/link.o
+ .debug_macro   0x0000bd06       0x3a ./src/usb-cdc/link.o
+ .debug_macro   0x0000bd40       0x88 ./src/usb-cdc/link.o
+ .debug_macro   0x0000bdc8       0x2e ./src/usb-cdc/link.o
+ .debug_macro   0x0000bdf6       0x10 ./src/usb-cdc/link.o
+ .debug_macro   0x0000be06      0x191 ./src/usb-cdc/usbd_desc.o
+ .debug_macro   0x0000bf97       0x49 ./src/usb-cdc/usbd_desc.o
+ .debug_macro   0x0000bfe0      0x124 ./src/usb-cdc/usbd_desc.o
+ .debug_macro   0x0000c104      0x197 ./src/usb-cdc/usbd_usr.o
+ .debug_macro   0x0000c29b       0xe5 ./src/dumper/dendy.o
+ .debug_macro   0x0000c380       0x8e ./src/dumper/dendy.o
+ .debug_macro   0x0000c40e      0x29c ./src/main.o
+ .debug_macro   0x0000c6aa       0x58 ./src/main.o
+ .debug_macro   0x0000c702       0x35 ./src/main.o
+ .debug_macro   0x0000c737       0x9c ./src/main.o
+ .debug_macro   0x0000c7d3       0x16 ./src/main.o
+ .debug_macro   0x0000c7e9       0x97 ./src/main.o
+ .debug_macro   0x0000c880      0x27a ./src/main.o
+ .debug_macro   0x0000cafa       0xf6 ./src/main.o
+ .debug_macro   0x0000cbf0       0x10 ./src/main.o
+ .debug_macro   0x0000cc00       0x52 ./src/main.o
+ .debug_macro   0x0000cc52       0x16 ./src/main.o
+ .debug_macro   0x0000cc68       0x43 ./src/main.o
+ .debug_macro   0x0000ccab      0x180 ./src/main.o
+ .debug_macro   0x0000ce2b       0x10 ./src/main.o
+ .debug_macro   0x0000ce3b       0x22 ./src/main.o
+ .debug_macro   0x0000ce5d       0xbe ./src/main.o
+ .debug_macro   0x0000cf1b       0x16 ./src/main.o
+ .debug_macro   0x0000cf31      0x197 ./src/main.o
+ .debug_macro   0x0000d0c8      0x11e ./src/main.o
+ .debug_macro   0x0000d1e6       0x10 ./src/main.o
+ .debug_macro   0x0000d1f6       0x94 ./src/main.o
+ .debug_macro   0x0000d28a       0xe1 ./src/stm32f4xx_it.o
+ .debug_macro   0x0000d36b      0x11a ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+ .debug_macro   0x0000d485      0x115 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+ .debug_macro   0x0000d59a      0x120 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+ .debug_macro   0x0000d6ba      0x125 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+ .debug_macro   0x0000d7df      0x16d ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+ .debug_macro   0x0000d94c      0x142 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+ .debug_macro   0x0000da8e      0x15f ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+ .debug_macro   0x0000dbed      0x180 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+ .debug_macro   0x0000dd6d      0x18d ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+ .debug_macro   0x0000defa       0xe7 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_macro   0x0000dfe1       0x7c ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_macro   0x0000e05d       0xe1 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_macro   0x0000e13e      0x64b ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_macro   0x0000e789      0x1b4 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_macro   0x0000e93d       0xfb ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
 
-.debug_line     0x00000000     0x6fb5
+.debug_line     0x00000000     0x6e50
  .debug_line    0x00000000      0x372 ./src/utils/utils.o
- .debug_line    0x00000372      0x663 ./src/usb-cdc/link.o
- .debug_line    0x000009d5      0x52d ./src/usb-cdc/usbd_desc.o
- .debug_line    0x00000f02      0x5aa ./src/usb-cdc/usbd_usr.o
- .debug_line    0x000014ac      0x41f ./src/dumper/dendy.o
- .debug_line    0x000018cb      0x7ba ./src/main.o
- .debug_line    0x00002085       0x7c ./src/startup_stm32f4xx.o
- .debug_line    0x00002101      0x3c4 ./src/stm32f4xx_it.o
- .debug_line    0x000024c5      0x44c ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
- .debug_line    0x00002911      0x919 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
- .debug_line    0x0000322a      0x573 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
- .debug_line    0x0000379d      0x5c4 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
- .debug_line    0x00003d61      0x63d ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
- .debug_line    0x0000439e      0x52d ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
- .debug_line    0x000048cb      0x6f5 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
- .debug_line    0x00004fc0      0x623 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
- .debug_line    0x000055e3      0x651 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
- .debug_line    0x00005c34      0x38e ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
- .debug_line    0x00005fc2      0x488 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_line    0x0000644a      0x79e ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_line    0x00006be8      0x3cd ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+ .debug_line    0x00000372      0x659 ./src/usb-cdc/link.o
+ .debug_line    0x000009cb      0x4f2 ./src/usb-cdc/usbd_desc.o
+ .debug_line    0x00000ebd      0x56f ./src/usb-cdc/usbd_usr.o
+ .debug_line    0x0000142c      0x4a5 ./src/dumper/dendy.o
+ .debug_line    0x000018d1      0x801 ./src/main.o
+ .debug_line    0x000020d2       0x7c ./src/startup_stm32f4xx.o
+ .debug_line    0x0000214e      0x391 ./src/stm32f4xx_it.o
+ .debug_line    0x000024df      0x44c ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+ .debug_line    0x0000292b      0x919 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+ .debug_line    0x00003244      0x573 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+ .debug_line    0x000037b7      0x5c4 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+ .debug_line    0x00003d7b      0x602 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+ .debug_line    0x0000437d      0x4f2 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+ .debug_line    0x0000486f      0x6c8 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+ .debug_line    0x00004f37      0x5e8 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+ .debug_line    0x0000551f      0x5af ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+ .debug_line    0x00005ace      0x38e ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_line    0x00005e5c      0x488 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_line    0x000062e4      0x79e ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_line    0x00006a82      0x3ce ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
 
-.debug_str      0x00000000    0x48e69
- .debug_str     0x00000000    0x4055e ./src/utils/utils.o
-                              0x406d4 (size before relaxing)
- .debug_str     0x0004055e     0x1e5c ./src/usb-cdc/link.o
-                              0x42634 (size before relaxing)
- .debug_str     0x000423ba      0x259 ./src/usb-cdc/usbd_desc.o
-                              0x41d80 (size before relaxing)
- .debug_str     0x00042613       0xbc ./src/usb-cdc/usbd_usr.o
-                              0x4258f (size before relaxing)
- .debug_str     0x000426cf      0x686 ./src/dumper/dendy.o
-                              0x40d67 (size before relaxing)
- .debug_str     0x00042d55     0x3142 ./src/main.o
-                              0x45c96 (size before relaxing)
- .debug_str     0x00045e97       0xb8 ./src/stm32f4xx_it.o
-                              0x40700 (size before relaxing)
- .debug_str     0x00045f4f      0x701 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
-                              0x422af (size before relaxing)
- .debug_str     0x00046650      0xbc6 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
-                              0x42796 (size before relaxing)
- .debug_str     0x00047216      0x115 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
-                              0x41d0e (size before relaxing)
- .debug_str     0x0004732b      0x32e ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
-                              0x425c1 (size before relaxing)
- .debug_str     0x00047659      0x14c ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
-                              0x424f3 (size before relaxing)
- .debug_str     0x000477a5       0xbe ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
-                              0x421ea (size before relaxing)
- .debug_str     0x00047863      0x151 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                              0x42435 (size before relaxing)
- .debug_str     0x000479b4      0x227 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                              0x42654 (size before relaxing)
- .debug_str     0x00047bdb      0x125 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
-                              0x41eb4 (size before relaxing)
- .debug_str     0x00047d00      0x181 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
-                              0x40905 (size before relaxing)
- .debug_str     0x00047e81      0x19a ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
-                              0x409ad (size before relaxing)
- .debug_str     0x0004801b      0xd4c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                              0x414ba (size before relaxing)
- .debug_str     0x00048d67      0x102 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
-                              0x4092d (size before relaxing)
+.debug_str      0x00000000    0x48cb2
+ .debug_str     0x00000000    0x4059c ./src/utils/utils.o
+                              0x40712 (size before relaxing)
+ .debug_str     0x0004059c     0x1db4 ./src/usb-cdc/link.o
+                              0x425ca (size before relaxing)
+ .debug_str     0x00042350      0x259 ./src/usb-cdc/usbd_desc.o
+                              0x41dbe (size before relaxing)
+ .debug_str     0x000425a9       0xbc ./src/usb-cdc/usbd_usr.o
+                              0x42598 (size before relaxing)
+ .debug_str     0x00042665      0x665 ./src/dumper/dendy.o
+                              0x40d84 (size before relaxing)
+ .debug_str     0x00042cca     0x3153 ./src/main.o
+                              0x45c6c (size before relaxing)
+ .debug_str     0x00045e1d       0x8d ./src/stm32f4xx_it.o
+                              0x40713 (size before relaxing)
+ .debug_str     0x00045eaa      0x646 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+                              0x422ea (size before relaxing)
+ .debug_str     0x000464f0      0xbc6 ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+                              0x427d4 (size before relaxing)
+ .debug_str     0x000470b6      0x115 ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+                              0x41d4c (size before relaxing)
+ .debug_str     0x000471cb      0x32e ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+                              0x425ff (size before relaxing)
+ .debug_str     0x000474f9      0x14c ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                              0x42531 (size before relaxing)
+ .debug_str     0x00047645       0xbe ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+                              0x42228 (size before relaxing)
+ .debug_str     0x00047703      0x151 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                              0x42473 (size before relaxing)
+ .debug_str     0x00047854      0x227 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                              0x42692 (size before relaxing)
+ .debug_str     0x00047a7b       0xb4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+                              0x4263d (size before relaxing)
+ .debug_str     0x00047b2f      0x181 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+                              0x40943 (size before relaxing)
+ .debug_str     0x00047cb0      0x19a ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                              0x409eb (size before relaxing)
+ .debug_str     0x00047e4a      0xd66 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                              0x414f8 (size before relaxing)
+ .debug_str     0x00048bb0      0x102 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+                              0x4096b (size before relaxing)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 ./src/utils/utils.o
@@ -2321,29 +2307,29 @@ OUTPUT(SuperDumperFW.elf elf32-littlearm)
  .comment       0x00000000       0x71 ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
  .comment       0x00000000       0x71 ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
 
-.debug_frame    0x00000000     0x24a4
+.debug_frame    0x00000000     0x247c
  .debug_frame   0x00000000       0x58 ./src/utils/utils.o
- .debug_frame   0x00000058       0xe4 ./src/usb-cdc/link.o
- .debug_frame   0x0000013c      0x114 ./src/usb-cdc/usbd_desc.o
- .debug_frame   0x00000250       0xf8 ./src/usb-cdc/usbd_usr.o
- .debug_frame   0x00000348       0xdc ./src/dumper/dendy.o
- .debug_frame   0x00000424       0x94 ./src/main.o
- .debug_frame   0x000004b8      0x110 ./src/stm32f4xx_it.o
- .debug_frame   0x000005c8       0xa4 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
- .debug_frame   0x0000066c      0x5ac ./lib/STM32_USB_OTG_Driver/src/usb_core.o
- .debug_frame   0x00000c18      0x20c ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
- .debug_frame   0x00000e24      0x1e8 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
- .debug_frame   0x0000100c      0x210 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
- .debug_frame   0x0000121c      0x110 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
- .debug_frame   0x0000132c      0x210 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
- .debug_frame   0x0000153c      0x158 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
- .debug_frame   0x00001694      0x140 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
- .debug_frame   0x000017d4       0xd8 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
- .debug_frame   0x000018ac      0x23c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_frame   0x00001ae8      0x83c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_frame   0x00002324       0x7c ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
- .debug_frame   0x000023a0       0x2c d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-init.o)
- .debug_frame   0x000023cc       0x50 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x0000241c       0x20 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-atexit.o)
- .debug_frame   0x0000243c       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-fini.o)
- .debug_frame   0x00002470       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-__atexit.o)
+ .debug_frame   0x00000058       0xe0 ./src/usb-cdc/link.o
+ .debug_frame   0x00000138      0x114 ./src/usb-cdc/usbd_desc.o
+ .debug_frame   0x0000024c       0xf8 ./src/usb-cdc/usbd_usr.o
+ .debug_frame   0x00000344      0x148 ./src/dumper/dendy.o
+ .debug_frame   0x0000048c       0xb8 ./src/main.o
+ .debug_frame   0x00000544       0xb0 ./src/stm32f4xx_it.o
+ .debug_frame   0x000005f4       0xa4 ./lib/STM32_USB_OTG_Driver/src/usb_bsp.o
+ .debug_frame   0x00000698      0x5ac ./lib/STM32_USB_OTG_Driver/src/usb_core.o
+ .debug_frame   0x00000c44      0x20c ./lib/STM32_USB_OTG_Driver/src/usb_dcd.o
+ .debug_frame   0x00000e50      0x1e8 ./lib/STM32_USB_OTG_Driver/src/usb_dcd_int.o
+ .debug_frame   0x00001038      0x210 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+ .debug_frame   0x00001248      0x110 ./lib/STM32_USB_Device_Library/Core/src/usbd_ioreq.o
+ .debug_frame   0x00001358      0x210 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+ .debug_frame   0x00001568      0x158 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+ .debug_frame   0x000016c0       0xec ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_vcp.o
+ .debug_frame   0x000017ac       0xd8 ./lib/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_frame   0x00001884      0x23c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_frame   0x00001ac0      0x83c ./lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_frame   0x000022fc       0x7c ./lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o
+ .debug_frame   0x00002378       0x2c d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-init.o)
+ .debug_frame   0x000023a4       0x50 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x000023f4       0x20 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-atexit.o)
+ .debug_frame   0x00002414       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-fini.o)
+ .debug_frame   0x00002448       0x34 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu\libg.a(lib_a-__atexit.o)

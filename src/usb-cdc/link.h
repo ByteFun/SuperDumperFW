@@ -57,8 +57,17 @@ USB_CDC_STATUS_t UB_USB_CDC_GetStatus(void);
 ErrorStatus UB_USB_CDC_SendString(char *ptr, USB_CDC_LASTBYTE_t end_cmd);
 USB_CDC_RXSTATUS_t UB_USB_CDC_ReceiveString(char *ptr);
 //--------------------------------------------------------------
-// Прием данных по USB
+
+// Буфер данных приема-передачи
+uint8_t  Data_Buf[ 0x10010 ];
+uint8_t  Ans_Buf[ 0x10 ];
+
+// CallBack приема данных по USB
 void USB_Read(uint8_t *Buf, uint32_t Size);
+// Проверка доступных данных
+uint8_t USB_Check();
+// Установка флага занятости
+void USB_ClearBusy();
 // Передача пакета по USB
 void USB_Write(uint8_t *Buf, uint32_t Size);
 

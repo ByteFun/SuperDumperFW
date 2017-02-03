@@ -63,8 +63,8 @@
   */
 typedef struct _CDC_IF_PROP
 {
-  uint16_t (*pIf_DataTx)   (void);
-  uint16_t (*pIf_DataRx)   (uint32_t Len);
+  uint16_t (*pIf_DataTx)   (uint8_t* Buf, uint32_t Len);
+  uint16_t (*pIf_DataRx)   (uint8_t* Buf, uint32_t Len);
 }
 CDC_IF_Prop_TypeDef;
 /**

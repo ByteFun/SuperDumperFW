@@ -14,11 +14,10 @@
 #include "usb-cdc/usbd_conf.h"
 #include "usbd_usr.h"
 #include "usb-cdc/usbd_desc.h"
+#include "usb-cdc/link.h"
 
 /* Exported typef ------------------------------------------------------------*/
-/* The following structures groups all needed parameters to be configured for the 
-   ComPort. These parameters can modified on the fly by the host through CDC class
-   command class requests. */
+
 typedef struct
 {
   uint32_t bitrate;
@@ -29,19 +28,15 @@ typedef struct
 
 
 
-#define APP_TX_BUF_SIZE         128  // Gr�sse vom RX-Puffer in Bytes (32,64,128,256 usw)
-#define APP_TX_BUF_MASK       (APP_TX_BUF_SIZE-1)
-#define  USB_CDC_RX_END_CHR    0x0D  // Endekennung (Ascii-Wert)
-#define  USB_CDC_FIRST_ASCII   32    // erstes Ascii-Zeichen
-#define  USB_CDC_LAST_ASCII    255   // letztes Ascii-Zeichen
+#define APP_TX_BUF_SIZE         128  // Размер буфера приема (32, 64, 128, 256 и т.д.)
+#define APP_TX_BUF_MASK         (APP_TX_BUF_SIZE-1)
+//#define USB_CDC_RX_END_CHR      0x0D  // Endekennung (Ascii-Wert)
+//#define USB_CDC_FIRST_ASCII       32    // erstes Ascii-Zeichen
+//#define USB_CDC_LAST_ASCII       255   // letztes Ascii-Zeichen
 
+// Отправить байт
+void UB_VCP_DataTx (uint8_t Data);
 
-
-/* Exported macro ------------------------------------------------------------*/
-/* Exported functions ------------------------------------------------------- */
-uint32_t VCP_DataRxE (uint8_t* Buf, uint16_t Len);
-void UB_VCP_DataTx (uint8_t wert);
-uint16_t UB_VCP_StringRx(char *ptr);
 
 #endif
 

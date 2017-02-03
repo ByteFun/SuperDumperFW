@@ -23,8 +23,8 @@
 #define PRG_F2_Off()	GPIOA->BSRRH = GPIO_Pin_0;		// Деактивируем PRG F2
 #define PRG_RnW_Rd()	GPIOA->BSRRL = GPIO_Pin_1;		// PRG R/W - чтение
 #define PRG_RnW_Wr()	GPIOA->BSRRH = GPIO_Pin_1;		// PRG R/W - запись
-#define PRG_ROM_On()	GPIOA->BSRRH = GPIO_Pin_2;		// Активируем PRG ROMSEL
-#define PRG_ROM_Off()	GPIOA->BSRRL = GPIO_Pin_2;		// Деактивируем PRG ROMSEL
+//#define PRG_ROM_On()	GPIOA->BSRRH = GPIO_Pin_2;		// Активируем PRG ROMSEL
+//#define PRG_ROM_Off()	GPIOA->BSRRL = GPIO_Pin_2;		// Деактивируем PRG ROMSEL
 #define CHR_PRD_On()	GPIOA->BSRRH = GPIO_Pin_3;		// Активируем CHR RD
 #define CHR_PRD_Off()	GPIOA->BSRRL = GPIO_Pin_3;		// Деактивируем CHR RD
 #define CHR_PWR_On()	GPIOA->BSRRH = GPIO_Pin_4;		// Активируем CHR WR
@@ -39,11 +39,17 @@
 void Dendy_Off();
 // Включить режим денди
 void Dendy_On();
+// Включить программный режим денди
+void Dendy_Manual();
 // Сброс картриджа
 void Dendy_Reset();
 // Чтение данных из картриджа в буфер
 void Dendy_Read(uint8_t *PBuf, uint32_t Start, uint32_t Size);
 // Запись данных из буфера в картридж
 void Dendy_Write(uint8_t *PBuf, uint32_t Start, uint32_t Size);
+// Чтение данных в буфер из картриджа в ручном режиме
+void Dendy_ManualRead(uint8_t *PBuf, uint32_t Start, uint32_t Size);
+// Запись данных из буфера в картридж в ручном режиме
+void Dendy_ManualWrite(uint8_t *PBuf, uint32_t Start, uint32_t Size);
 
 #endif /* DUMPER_DENDY_H_ */

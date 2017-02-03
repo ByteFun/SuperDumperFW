@@ -9,7 +9,7 @@ void Dendy_Off()
 	// Отключаем шину
 	ADR_BUS_Off(); CHR_BUS_Off(); PRG_BUS_Off();
 	// Деинит управляющих ног Dendy
-	PRG_F2_Off(); PRG_RnW_Rd(); PRG_ROM_Off(); CHR_PRD_Off(); CHR_PWR_Off(); CHR_nPA13_Off();
+	PRG_F2_Off(); PRG_RnW_Rd(); CHR_PRD_Off(); CHR_PWR_Off(); CHR_nPA13_Off(); // PRG_ROM_Off();
 	RCC_APB1PeriphClockCmd( RCC_APB1Periph_TIM5, DISABLE); TIM5->CR1 = 0x0000;
 	GPIO_InStr.GPIO_Pin = 0x0001;
 	GPIO_InStr.GPIO_Mode = GPIO_Mode_OUT;
@@ -26,7 +26,7 @@ void Dendy_On()
 	// Инит общих управляющих ног
 	ADR_BUS_On(); CHR_BUS_Off(); PRG_BUS_Off();
 	// Инит управляющих ног Dendy
-	PRG_F2_Off(); PRG_RnW_Rd(); PRG_ROM_Off(); CHR_PRD_Off(); CHR_PWR_Off(); CHR_nPA13_Off();
+	PRG_F2_Off(); PRG_RnW_Rd(); CHR_PRD_Off(); CHR_PWR_Off(); CHR_nPA13_Off(); // PRG_ROM_Off();
 	GPIO_InStr.GPIO_Pin = 0x0001;
 	GPIO_InStr.GPIO_Mode = GPIO_Mode_AF;
 	GPIO_InStr.GPIO_Speed = GPIO_High_Speed;
@@ -35,10 +35,27 @@ void Dendy_On()
 	GPIO_Init( GPIOA, &GPIO_InStr );
 	GPIO_PinAFConfig( GPIOA, GPIO_PinSource0, GPIO_AF_TIM5 );
 	// F2: ____------- 200ns/360ns = 560ns/1.786MHz
-	RCC_APB1PeriphClockCmd( RCC_APB1Periph_TIM5, ENABLE); TIM5->PSC = 0x0000; TIM5->ARR = 0x0000005D; TIM5->CCR1 = 0x0000003C; TIM5->CCMR1 = 0x0060;
+	RCC_APB1PeriphClockCmd( RCC_APB1Periph_TIM5, ENABLE); TIM5->PSC = 0x0000; TIM5->ARR = 0x0000002E; TIM5->CCR1 = 0x0000001E; TIM5->CCMR1 = 0x0060;
 	TIM5->CCMR2 = 0x0000; TIM5->CCER = 0x0001; TIM5->SMCR = 0x0000; TIM5->DIER = 0x0000; TIM5->CR2 = 0x0000; TIM5->CR1 = 0x0001;
 	// Сбрасываем картридж
 	Dendy_Reset();
+}
+// Включить программный режим денди
+void Dendy_Manual()
+{	// Параметры
+	GPIO_InitTypeDef	GPIO_InStr;
+	// Инит общих управляющих ног
+	ADR_BUS_On(); CHR_BUS_Off(); PRG_BUS_Off();
+	// Инит управляющих ног Dendy
+	PRG_F2_Off(); PRG_RnW_Rd(); CHR_PRD_Off(); CHR_PWR_Off(); CHR_nPA13_Off(); // PRG_ROM_Off();
+	GPIO_InStr.GPIO_Pin = 0x0001;
+	GPIO_InStr.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InStr.GPIO_Speed = GPIO_High_Speed;
+	GPIO_InStr.GPIO_OType = GPIO_OType_PP;
+	GPIO_InStr.GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_Init( GPIOA, &GPIO_InStr );
+	// Деактивация F2
+	GPIO_ResetBits( GPIOA, 0x0001 );
 }
 // Сброс картриджа
 void Dendy_Reset()
@@ -271,7 +288,7 @@ void Dendy_Write(uint8_t *PBuf, uint32_t Start, uint32_t Size)
 		while ((Size & 0x00003FFF) != 0)
 		{	// Выставляем адрес и данные
 			GPIOE->ODR = Start & 0x0000FFFF; GPIOD->ODR = (GPIOD->ODR & 0x00FF) | (*(PBuf) * 0x100);
-			// Активируем строб чтения CHR
+			// Активируем строб записи CHR
 			CHR_PWR_On();
 			// Ждем
 			Delay = 3; while (Delay) { Delay -= 1; }
@@ -282,6 +299,79 @@ void Dendy_Write(uint8_t *PBuf, uint32_t Start, uint32_t Size)
 		}
 	}
 	// Начальное состояние
+	GPIO_InStr.GPIO_Pin = 0xFFFF;
+	GPIO_InStr.GPIO_Mode = GPIO_Mode_IN;
+	GPIO_InStr.GPIO_Speed = GPIO_High_Speed;
+	GPIO_InStr.GPIO_OType = GPIO_OType_PP;
+	GPIO_InStr.GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_Init( GPIOD, &GPIO_InStr );
+	CHR_BUS_Off(); PRG_BUS_Off(); CHR_In(); PRG_In();
+}
+
+// Чтение данных в буфер из картриджа в ручном режиме
+void Dendy_ManualRead(uint8_t *PBuf, uint32_t Start, uint32_t Size)
+{	// Переменные
+	uint32_t			Delay;
+	GPIO_InitTypeDef	GPIO_InStr;
+	// Начальные установки
+	PRG_F2_Off(); PRG_RnW_Rd(); CHR_In(); PRG_In(); GPIOC->ODR &= 0xFF00;
+	GPIO_InStr.GPIO_Pin = 0xFFFF;
+	GPIO_InStr.GPIO_Mode = GPIO_Mode_IN;
+	GPIO_InStr.GPIO_Speed = GPIO_High_Speed;
+	GPIO_InStr.GPIO_OType = GPIO_OType_PP;
+	GPIO_InStr.GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_Init( GPIOD, &GPIO_InStr );
+	CHR_BUS_On(); PRG_BUS_On();
+	// Маски адресов и размеров
+	Start &= 0x0000FFFF; Size &= 0x0000FFFF;
+	while ((Size & 0x0000FFFF) != 0)
+	{	// Выставляем адрес
+		GPIOE->ODR = Start & 0x0000FFFF;
+		// Активируем строб чтения CHR
+		PRG_F2_On();
+		// Ждем
+		Delay = 3; while (Delay) { Delay -= 1; }
+		// Забираем данные и отключаем строб
+		*(PBuf) = GPIOD->IDR & 0x00FF;
+		// Деактивируем чтение
+		PRG_F2_Off();
+		// Счетчики
+		PBuf += 1; Start += 1; Size -= 1;
+	}
+	// Начальное состояние
+	PRG_F2_Off(); CHR_BUS_Off(); PRG_BUS_Off();
+}
+
+// Запись данных из буфера в картридж в ручном режиме
+void Dendy_ManualWrite(uint8_t *PBuf, uint32_t Start, uint32_t Size)
+{	// Переменные
+	uint32_t			Delay;
+	GPIO_InitTypeDef	GPIO_InStr;
+	// Начальные установки
+	PRG_F2_Off(); PRG_RnW_Wr(); CHR_Out(); PRG_Out(); GPIOC->ODR &= 0xFF00;
+	GPIO_InStr.GPIO_Pin = 0xFFFF;
+	GPIO_InStr.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InStr.GPIO_Speed = GPIO_High_Speed;
+	GPIO_InStr.GPIO_OType = GPIO_OType_PP;
+	GPIO_InStr.GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_Init( GPIOD, &GPIO_InStr );
+	CHR_BUS_On(); PRG_BUS_On();
+	// Маски адресов и размеров
+	Start &= 0x0000FFFF; Size &= 0x0000FFFF;
+	while ((Size & 0x0000FFFF) != 0)
+	{	// Выставляем адрес и данные
+		GPIOE->ODR = Start & 0x0000FFFF; GPIOD->ODR = (GPIOD->ODR & 0xFF00) | *(PBuf);
+		// Активируем строб чтения CHR
+		PRG_F2_On();
+		// Ждем
+		Delay = 3; while (Delay) { Delay -= 1; }
+		// Деактивируем чтение
+		PRG_F2_Off();
+		// Счетчики
+		PBuf += 1; Start += 1; Size -= 1;
+	}
+	// Начальное состояние
+	PRG_F2_Off(); PRG_RnW_Rd();
 	GPIO_InStr.GPIO_Pin = 0xFFFF;
 	GPIO_InStr.GPIO_Mode = GPIO_Mode_IN;
 	GPIO_InStr.GPIO_Speed = GPIO_High_Speed;

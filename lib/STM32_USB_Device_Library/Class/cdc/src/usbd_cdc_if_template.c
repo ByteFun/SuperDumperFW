@@ -38,7 +38,7 @@
 /* Private variables ---------------------------------------------------------*/
 /* These are external variables imported from CDC core to be used for IN 
    transfer management. */
-extern uint8_t  APP_Rx_Buffer [256]; /* Write CDC received data in this buffer.
+extern uint8_t  APP_Rx_Buffer []; /* Write CDC received data in this buffer.
                                      These data will be sent over USB IN endpoint
                                      in the CDC core functions. */
 extern uint32_t APP_Rx_ptr_in;    /* Increment this pointer or roll it back to

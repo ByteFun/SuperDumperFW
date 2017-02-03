@@ -9,7 +9,6 @@
 //--------------------------------------------------------------
 #include "usbd_cdc_vcp.h"
 
-
 LINE_CODING linecoding =
   {
     115200, /* baud rate*/
@@ -20,12 +19,9 @@ LINE_CODING linecoding =
 
 
 //--------------------------------------------------------------
-extern uint8_t  APP_Rx_Buffer []; /* Write CDC received data in this buffer.
-                                     These data will be sent over USB IN endpoint
-                                     in the CDC core functions. */
-extern uint32_t APP_Rx_ptr_in;    /* Increment this pointer or roll it back to
-                                     start address when writing received data
-                                     in the buffer APP_Rx_Buffer. */
+extern uint8_t  APP_Rx_Buffer []; // Буфер исходящих данных
+extern uint32_t APP_Rx_ptr_in;    // Указатель на голову буфера исходящих данных
+extern uint32_t APP_Rx_ptr_out;   // Указатель на хвост буфера исходящих данных
 
 //--------------------------------------------------------------
 static uint16_t VCP_Init     (void);
@@ -33,11 +29,6 @@ static uint16_t VCP_DeInit   (void);
 static uint16_t VCP_Ctrl     (uint32_t Cmd, uint8_t* Buf, uint32_t Len);
 static uint16_t VCP_DataTx   (uint8_t* Buf, uint32_t Len);
 static uint16_t VCP_DataRx   (uint8_t* Buf, uint32_t Len);
-
-uint8_t APP_Tx_Buffer[APP_TX_BUF_SIZE];
-uint32_t APP_tx_ptr_head;
-uint32_t APP_tx_ptr_tail;
-uint8_t APP_tx_end_cmd;
 
 CDC_IF_Prop_TypeDef VCP_fops = 
 {
@@ -48,14 +39,10 @@ CDC_IF_Prop_TypeDef VCP_fops =
   VCP_DataRx
 };
 
-
 //--------------------------------------------------------------
 static uint16_t VCP_Init(void)
-{
-  APP_tx_ptr_head=0;
-  APP_tx_ptr_tail=0;
-  APP_tx_end_cmd=0;
-  return USBD_OK;
+{	// Инит
+	return USBD_OK;
 }
 
 //--------------------------------------------------------------
@@ -122,7 +109,8 @@ static uint16_t VCP_Ctrl (uint32_t Cmd, uint8_t* Buf, uint32_t Len)
   return USBD_OK;
 }
 
-
+//--------------------------------------------------------------
+// CallBack передачи по USB
 //--------------------------------------------------------------
 static uint16_t VCP_DataTx (uint8_t* Buf, uint32_t Len)
 {
@@ -144,112 +132,26 @@ static uint16_t VCP_DataTx (uint8_t* Buf, uint32_t Len)
 
 
 //--------------------------------------------------------------
-// wird beim empfang von einem Zeichen aufgerufen
+// CallBack приема по USB
 //--------------------------------------------------------------
-static uint16_t VCP_DataRx (uint8_t* Buf, uint32_t Len){
-  uint32_t i;
-  uint32_t temphead;
-  uint8_t wert;
-
-  for (i = 0; i < Len; i++){
-    temphead=(APP_tx_ptr_head+1) & APP_TX_BUF_MASK;
-    APP_tx_ptr_head=temphead;
-
-    if(temphead==APP_tx_ptr_tail) {
-      return USBD_FAIL; // overflow
-    }
-
-    wert = *(Buf + i);
-    //    if(wert==USB_CDC_RX_END_CHR) {
-          // Endekennung wurde empfangen
-    //      APP_tx_end_cmd++;
-    //    }
-    APP_Tx_Buffer[temphead] = wert;
-  }
-  return USBD_OK;
+static uint16_t VCP_DataRx (uint8_t* Buf, uint32_t Len)
+{	// Байпассим необходимые данные
+	USB_Read( Buf, Len );
+	return USBD_OK;
 }
 
-
 //--------------------------------------------------------------
-// Ein Byte in den Sendepuffer eintragen
+// Постановка байта в исходящий буфер
 //--------------------------------------------------------------
-void UB_VCP_DataTx (uint8_t wert)
-{
-
-  APP_Rx_Buffer[APP_Rx_ptr_in] = wert;
-  APP_Rx_ptr_in++;
-
-  if(APP_Rx_ptr_in >= APP_RX_DATA_SIZE)
-  {
-    APP_Rx_ptr_in = 0;
-  }
-}
-
-uint32_t VCP_DataRxE (uint8_t* Buf, uint16_t Len)
+void UB_VCP_DataTx (uint8_t Data)
 {	// Переменные
-	uint16_t akt_pos;
-	uint32_t temptail;
-	// Есть данные?
-	if (APP_tx_ptr_head == APP_tx_ptr_tail)
-	{	// Буфер пуст
-	    APP_tx_end_cmd=0;
-	    return(0);
-	}
-	// Загружаем данные
-	akt_pos=0;
-	do
-	{	// Берем хвостик
-		temptail=(APP_tx_ptr_tail+1) & APP_TX_BUF_MASK;
-		APP_tx_ptr_tail=temptail;
-		*(Buf+akt_pos) = APP_Tx_Buffer[temptail];
-		akt_pos++;
-	} while ((APP_tx_ptr_head != APP_tx_ptr_tail) && (akt_pos<Len));
-	return akt_pos;
+	uint32_t NewPtr;
+	// Ждем места в буфере
+	NewPtr = APP_Rx_ptr_in + 1;
+	if (NewPtr >= APP_RX_DATA_SIZE) { NewPtr = 0; }
+	while (NewPtr == APP_Rx_ptr_out) { }
+	// Выгружаем байт
+	APP_Rx_Buffer[APP_Rx_ptr_in] = Data; APP_Rx_ptr_in++;
+	// Коррекция
+	if(APP_Rx_ptr_in >= APP_RX_DATA_SIZE) {	APP_Rx_ptr_in = 0; }
 }
-
-//--------------------------------------------------------------
-// Einen String aus dem Empfangspuffer auslesen
-// bis zur ersten Endekennung (0x0D)
-// Ret_wert :
-//   0 = nichts vorhanden
-//  >0 = Anzahl der empfangenen Zeichen
-//--------------------------------------------------------------
-uint16_t UB_VCP_StringRx(char *ptr)
-{
-  uint16_t akt_pos=0;
-  uint8_t wert;
-  uint32_t temptail;
-
-  // test ob eine Endekennung empfangen wurde
-  if(APP_tx_end_cmd==0) return(0);
-
-  if(APP_tx_ptr_head==APP_tx_ptr_tail) {
-    // Puffer ist leer
-    APP_tx_end_cmd=0;
-    return(0);
-  }
-
-  // kompletten String bis zur Endekennung auslesen
-  // (oder bis Puffer leer ist)
-  // es werden nur Ascii-Zeichen �bergeben
-  akt_pos=0;
-  do {
-    temptail=(APP_tx_ptr_tail+1) & APP_TX_BUF_MASK;
-    APP_tx_ptr_tail=temptail;
-    wert=APP_Tx_Buffer[temptail];
-    if((wert>=USB_CDC_FIRST_ASCII) && (wert<=USB_CDC_LAST_ASCII)) {
-      *(ptr+akt_pos)=wert;
-      akt_pos++;
-    }
-  }while((APP_tx_ptr_head!=APP_tx_ptr_tail) && (wert!=USB_CDC_RX_END_CHR));
-
-  // Stringende anh�ngen
-  *(ptr+akt_pos)=0x00;
-
-  // eine Endekennung wurde bearbeitet
-  APP_tx_end_cmd--;
-
-  return akt_pos;
-}
-
-

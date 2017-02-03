@@ -28,7 +28,7 @@
  #define CDC_CMD_PACKET_SZE             8    /* Control Endpoint Packet size */
 
  #define CDC_IN_FRAME_INTERVAL          1    /* Number of frames between IN transfers */
- #define APP_RX_DATA_SIZE               2048 /* Total size of IN buffer:
+ #define APP_RX_DATA_SIZE               2048  /* Total size of IN buffer:
                                                 APP_RX_DATA_SIZE*8/MAX_BAUDARATE*1000 should be > CDC_IN_FRAME_INTERVAL */
 
 

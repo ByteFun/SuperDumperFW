@@ -49,7 +49,7 @@ all: SuperDumperFW.elf secondary-outputs
 SuperDumperFW.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "D:\WORK\ARM\ARM C\SuperDumperFW\startup\stm32_flash.ld" -Xlinker --gc-sections -Wl,-Map,"SuperDumperFW.map" -o "SuperDumperFW.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "D:\WORK\ARM\ARM C\SuperDumperFW\startup\stm32_flash.ld" -Xlinker --gc-sections -Wl,-Map,"SuperDumperFW.map" -o "SuperDumperFW.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

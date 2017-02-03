@@ -5,14 +5,29 @@
 #include "usbd_cdc_core.h"
 #include "usbd_cdc_vcp.h"
 
+// Окружение приемника
+typedef struct
+{
+	uint8_t  Busy;
+	uint8_t  Mode;
+	uint8_t  Force;
+	uint8_t  Temp[12];
+	uint32_t AnsPtr;
+	uint32_t Sz;
+	uint32_t CRC32;
+} TUSBRecv;
+static TUSBRecv USBRecv;
+
 //--------------------------------------------------------------
 // Инициализация USB-OTG-порта как CDC-устройство
 // (Виртуальный COM порт)
 //--------------------------------------------------------------
 void UB_USB_CDC_Init(void)
-{
-  USB_CDC_STATUS=USB_CDC_DETACHED;
-  USBD_Init(&USB_OTG_dev, USB_OTG_FS_CORE_ID, &USR_desc, &USBD_CDC_cb, &USR_cb);
+{	// Инит
+	for (USBRecv.Mode = 0; USBRecv.Mode < 12; USBRecv.Mode++) { USBRecv.Temp[USBRecv.Mode] = 0; }
+	USBRecv.Busy = 0; USBRecv.Mode = 0;
+	USB_CDC_STATUS=USB_CDC_DETACHED;
+	USBD_Init(&USB_OTG_dev, USB_OTG_FS_CORE_ID, &USR_desc, &USBD_CDC_cb, &USR_cb);
 }
 
 //--------------------------------------------------------------
@@ -24,133 +39,90 @@ void UB_USB_CDC_Init(void)
 //--------------------------------------------------------------
 USB_CDC_STATUS_t UB_USB_CDC_GetStatus(void)
 {
-  return(USB_CDC_STATUS);
+	return (USB_CDC_STATUS);
 }
 
-
-//--------------------------------------------------------------
-// Посылка строки через интерфейс OTG USB
-// команда в конце : [NONE, LFCR, CRLF, LF, CR]
-// Возвращаемое значение :
-//  -> ERROR   , строка не отправлена
-//  -> SUCCESS , строка отправлена
-//--------------------------------------------------------------
-ErrorStatus UB_USB_CDC_SendString(char *ptr, USB_CDC_LASTBYTE_t end_cmd)
+// Проверка доступных данных
+uint8_t USB_Check()
 {
-
-  if(USB_CDC_STATUS!=USB_CDC_CONNECTED) {
-  // передавать только, когда соединение установлено
-    return(ERROR);
-  }
-
-  // Отправить строку целиком
-  while (*ptr != 0) {
-    UB_VCP_DataTx(*ptr);
-    ptr++;
-  }
-  // отправка конечного идентификатора
-  if(end_cmd==LFCR) {
-    UB_VCP_DataTx(0x0A); // Возврат строки
-    UB_VCP_DataTx(0x0D); // Перевод каретки
-  }
-  else if(end_cmd==CRLF) {
-    UB_VCP_DataTx(0x0D); // Перевод каретки
-    UB_VCP_DataTx(0x0A); // Возврат строки
-  }
-  else if(end_cmd==LF) {
-    UB_VCP_DataTx(0x0A); // Возврат строки
-  }
-  else if(end_cmd==CR) {
-    UB_VCP_DataTx(0x0D); // Перевод каретки
-  }
-
-  return(SUCCESS);
+	if (USBRecv.Mode == 3)
+	{	// Принято - выдаем флаг освобождаем
+		for (USBRecv.Mode = 0; USBRecv.Mode < 12; USBRecv.Mode++) { USBRecv.Temp[USBRecv.Mode] = 0; }
+		USBRecv.Busy = 0xFF; USBRecv.Mode = 0;
+		return ( 0xFF );
+	}
+	else
+	{	// Не готово еще
+		return ( 0 );
+	}
 }
-
-
-
-//--------------------------------------------------------------
-// получение строки через интерфейс OTG USB
-// (прием реализуется с помощью прерывания)
-// Эта функция должна опрашиваться циклически
-// Возвращаемое значение :
-//  -> если USB не готов = RX_USB_ERR
-//  -> если ничего не получено = RX_EMPTY
-//  -> если строка получена = RX_READY -> Строка в *ptr
-//--------------------------------------------------------------
-USB_CDC_RXSTATUS_t UB_USB_CDC_ReceiveString(char *ptr)
+// Установка флага занятости
+void USB_ClearBusy()
 {
-  uint16_t check;
-
-  if(USB_CDC_STATUS!=USB_CDC_CONNECTED) {
-    // прием только тогда, когда соединение установлено
-    return(RX_USB_ERR);
-  }
-
-  check=UB_VCP_StringRx(ptr);
-  if(check==0) {
-    ptr[0]=0x00;
-    return(RX_EMPTY);
-  }
-
-  return(RX_READY);
+	USBRecv.Busy = 0;
 }
 
 //------------------------------------------------------------------------------
 // Прием данных по USB
 void USB_Read(uint8_t *Buf, uint32_t Size)
-{	// Локальные переменные
-	uint8_t  *Ans;
-	uint8_t  Temp[12];
-	uint8_t  Dat,Mode;
-	uint32_t Sz,Cnt,CRC32;
+{	// Локали
+	uint32_t Pos,Cnt;
 	// Работаем
-	*(Buf) = 0xFF; Ans = Buf; Mode = 0; Sz = 0; CRC32 = 0xFFFFFFFF; for (Cnt = 0; Cnt < 12; Cnt++) { Temp[Cnt] = 0; }
-	// Ожидаем приема
-	while ((USB_CDC_STATUS == USB_CDC_CONNECTED) && (Mode < 3))
-	{	// Примем байт
-		if (VCP_DataRxE( &Dat, 1 ) == 1)
+	while ((USBRecv.Mode < 3) && (Size > 0))
+	{	// Перебираем буфер
+		for (Pos = 0; Pos < Size; Pos++)
 		{	// Логика работы
-			switch (Mode)
+			switch (USBRecv.Mode)
 			{	// Пытаемся синхронизироваться
 				case 0 :
 				{	// Заносим данные и вращаем барабан :)
-					for (Cnt = 0; Cnt < 11; Cnt++) { Temp[Cnt] = Temp[Cnt+1]; }
-					Temp[11] = Dat;
+					for (Cnt = 0; Cnt < 11; Cnt++) { USBRecv.Temp[Cnt] = USBRecv.Temp[Cnt + 1]; }
+					USBRecv.Temp[11] = *(Buf + Pos);
 					// Проверяемся на синхротокен и размер
-					if ((*((uint32_t *) &Temp[0]) == 0x4F434E49) && (*((uint32_t *) &Temp[4]) == 0x474E494D))
+					if ((*((uint32_t *) &USBRecv.Temp[0]) == 0x4F434E49) && (*((uint32_t *) &USBRecv.Temp[4]) == 0x474E494D))
 					{	// Синхра есть, пробуем размер
-						if (*((uint32_t *) &Temp[8]) <= Size)
+						if (*((uint32_t *) &USBRecv.Temp[8]) <= 0x10000)
 						{	// Можно принимать
-							Sz = *((uint32_t *) &Temp[8]); Mode = 1; CRC32 = 0xFFFFFFFF; Ans = Buf;
+							USBRecv.Sz = *((uint32_t *) &USBRecv.Temp[8]); USBRecv.Mode = 1; USBRecv.Force = 0; USBRecv.CRC32 = 0xFFFFFFFF; USBRecv.AnsPtr = 0;
 						}
 					}
 					break;
 				}
 				// Загружаем тело
 				case 1 :
-				{	// Заносим данные
-					*(Ans) = Dat; Calc_CRC32( Dat, &CRC32 ); Ans++; Sz--;
-					if (Sz == 0)
-					{	// Все загружено, чекаем сумму
-						Mode = 2; Sz = 4;
+				{	// Установим признак системной команды
+					if ((USBRecv.AnsPtr == 0) && (*(Buf + Pos) < 0x10)) { USBRecv.Force = 0xFF; }
+					// Проверяем, не заняты ли мы?
+					if ( !(USBRecv.Busy) || (USBRecv.Force))
+					{	// Если свободны или заняты, но команда системная - заносим данные
+						Data_Buf[USBRecv.AnsPtr] = *(Buf + Pos); Calc_CRC32( Data_Buf[USBRecv.AnsPtr], &USBRecv.CRC32 ); USBRecv.AnsPtr++; USBRecv.Sz--;
+						if (USBRecv.Sz == 0)
+						{	// Все загружено, чекаем сумму
+							USBRecv.Mode = 2; USBRecv.Sz = 4;
+						}
+					}
+					else
+					{	// Иначе - бахнем ошибку
+						Ans_Buf[0] = 0xFF; Ans_Buf[1] = 0xFF; USB_Write( &Ans_Buf[0], 2 );
+						// И вернемся
+						USBRecv.Mode = 0; USBRecv.Sz = 0; USBRecv.CRC32 = 0xFFFFFFFF; for (Cnt = 0; Cnt < 12; Cnt++) { USBRecv.Temp[Cnt] = 0; }
 					}
 					break;
 				}
 				// Загружаем CRC32
 				case 2 :
 				{	// Заносим сумму в буфер со сдвигом
-					for (Cnt = 0; Cnt < 3; Cnt++) { Temp[Cnt] = Temp[Cnt+1]; }
-					Temp[3] = Dat; Sz--;
-					if (Sz == 0)
+					for (Cnt = 0; Cnt < 3; Cnt++) { USBRecv.Temp[Cnt] = USBRecv.Temp[Cnt + 1]; }
+					USBRecv.Temp[3] = *(Buf + Pos); USBRecv.Sz--;
+					if (USBRecv.Sz == 0)
 					{	// Проверяем сумму
-						if (*((uint32_t *) &Temp[0]) == CRC32)
+						if (*((uint32_t *) &USBRecv.Temp[0]) == USBRecv.CRC32)
 						{	// Сумма совпала - выходим
-							Mode = 3;
+							USBRecv.Mode = 3;
 						}
 						else
 						{	// Сумма не совпала - начинай с начала
-							Ans = Buf; Mode = 0; Sz = 0; CRC32 = 0xFFFFFFFF; for (Cnt = 0; Cnt < 12; Cnt++) { Temp[Cnt] = 0; }
+							USBRecv.Mode = 0; USBRecv.Sz = 0; USBRecv.CRC32 = 0xFFFFFFFF; for (Cnt = 0; Cnt < 12; Cnt++) { USBRecv.Temp[Cnt] = 0; }
 						}
 					}
 					break;
@@ -158,9 +130,8 @@ void USB_Read(uint8_t *Buf, uint32_t Size)
 				// Заглушка
 				default :
 				{	// Возвращаем на начало
-					Ans = Buf; Mode = 0; Sz = 0; CRC32 = 0xFFFFFFFF; for (Cnt = 0; Cnt < 12; Cnt++) { Temp[Cnt] = 0; }
+					USBRecv.Mode = 0; USBRecv.Sz = 0; USBRecv.CRC32 = 0xFFFFFFFF; for (Cnt = 0; Cnt < 12; Cnt++) { USBRecv.Temp[Cnt] = 0; }
 				}
-
 			}
 		}
 	}

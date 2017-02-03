@@ -22,7 +22,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "usb_bsp.h"
-#include "usb-hid/usbd_conf.h"
+#include "usb-cdc/usbd_conf.h"
 
 #include "stm32f4xx_conf.h"
 //#include "stm32f4_discovery.h"
