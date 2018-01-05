@@ -9,7 +9,7 @@ void Dendy_Off()
 	// Отключаем шину
 	ADR_BUS_Off(); CHR_BUS_Off(); PRG_BUS_Off();
 	// Деинит управляющих ног Dendy
-	PRG_F2_Off(); PRG_RnW_Rd(); CHR_PRD_Off(); CHR_PWR_Off(); CHR_nPA13_Off(); // PRG_ROM_Off();
+	PRG_F2_Off(); PRG_RnW_Rd(); CHR_PRD_Off(); CHR_PWR_Off(); CHR_nPA13_Off();
 	RCC_APB1PeriphClockCmd( RCC_APB1Periph_TIM5, DISABLE); TIM5->CR1 = 0x0000;
 	GPIO_InStr.GPIO_Pin = 0x0001;
 	GPIO_InStr.GPIO_Mode = GPIO_Mode_OUT;
@@ -19,6 +19,7 @@ void Dendy_Off()
 	GPIO_Init( GPIOA, &GPIO_InStr );
 	GPIO_ResetBits( GPIOA, 0x0001 );
 }
+
 // Включение режима Денди
 void Dendy_On()
 {	// Параметры
@@ -26,7 +27,7 @@ void Dendy_On()
 	// Инит общих управляющих ног
 	ADR_BUS_On(); CHR_BUS_Off(); PRG_BUS_Off();
 	// Инит управляющих ног Dendy
-	PRG_F2_Off(); PRG_RnW_Rd(); CHR_PRD_Off(); CHR_PWR_Off(); CHR_nPA13_Off(); // PRG_ROM_Off();
+	PRG_F2_Off(); PRG_RnW_Rd(); CHR_PRD_Off(); CHR_PWR_Off(); CHR_nPA13_Off();
 	GPIO_InStr.GPIO_Pin = 0x0001;
 	GPIO_InStr.GPIO_Mode = GPIO_Mode_AF;
 	GPIO_InStr.GPIO_Speed = GPIO_High_Speed;
@@ -40,6 +41,7 @@ void Dendy_On()
 	// Сбрасываем картридж
 	Dendy_Reset();
 }
+
 // Включить программный режим денди
 void Dendy_Manual()
 {	// Параметры
@@ -57,15 +59,17 @@ void Dendy_Manual()
 	// Деактивация F2
 	GPIO_ResetBits( GPIOA, 0x0001 );
 }
+
 // Сброс картриджа
 void Dendy_Reset()
 {	// Выключаем шину
-	ADR_BUS_Off(); Delay(0x3567DFE);
+	ADR_BUS_Off(); Delay( 0x3567DFE );
 	GPIOC->ODR &= 0xFF00; GPIOE->ODR = 0x0000;
-	ADR_BUS_On(); Delay(0x3567DFE);
+	ADR_BUS_On(); Delay( 0x3567DFE );
 }
+
 // Чтение данных PRG в буфер
-__attribute__ ((naked)) void Read_PRG(uint8_t *PBuf, uint32_t Start, uint32_t Size)
+__attribute__ ((naked)) void Read_PRG( uint8_t *PBuf, uint32_t Start, uint32_t Size )
 {	// Начинаем
 	__asm volatile
 	(	"PUSH	{R0-R8}\n"
@@ -135,9 +139,10 @@ __attribute__ ((naked)) void Read_PRG(uint8_t *PBuf, uint32_t Start, uint32_t Si
 		"POP	{R0-R8}\n"
 		"BX		LR\n"
 	);
-};
+}
+
 // Чтение данных из картриджа в буфер
-void Dendy_Read(uint8_t *PBuf, uint32_t Start, uint32_t Size)
+void Dendy_Read( uint8_t *PBuf, uint32_t Start, uint32_t Size )
 {	// Переменные
 	uint32_t			Delay;
 	GPIO_InitTypeDef	GPIO_InStr;
@@ -153,7 +158,7 @@ void Dendy_Read(uint8_t *PBuf, uint32_t Start, uint32_t Size)
 	// Это PRG или CHR?
 	if ((Start & 0x00FF0000) == 0)
 	{
-		Read_PRG(PBuf,Start,Size);
+		Read_PRG( PBuf, Start, Size );
 	}
 	else
 	{	// Маски адресов и размеров
@@ -175,8 +180,9 @@ void Dendy_Read(uint8_t *PBuf, uint32_t Start, uint32_t Size)
 	}
 	CHR_BUS_Off(); PRG_BUS_Off();
 }
+
 // Запись данных буфера в PRG
-__attribute__ ((naked)) void Write_PRG(uint8_t *PBuf, uint32_t Start, uint32_t Size)
+__attribute__ ((naked)) void Write_PRG( uint8_t *PBuf, uint32_t Start, uint32_t Size )
 {	// Начинаем
 	__asm volatile
 	(	"PUSH	{R0-R11}\n"
@@ -263,8 +269,9 @@ __attribute__ ((naked)) void Write_PRG(uint8_t *PBuf, uint32_t Start, uint32_t S
 		"BX		LR\n"
 	);
 }
+
 // Запись данных из буфера в картридж
-void Dendy_Write(uint8_t *PBuf, uint32_t Start, uint32_t Size)
+void Dendy_Write( uint8_t *PBuf, uint32_t Start, uint32_t Size )
 {	// Переменные
 	uint32_t			Delay;
 	GPIO_InitTypeDef	GPIO_InStr;
@@ -280,7 +287,7 @@ void Dendy_Write(uint8_t *PBuf, uint32_t Start, uint32_t Size)
 	// Это PRG или CHR?
 	if ((Start & 0x00FF0000) == 0)
 	{
-		Write_PRG(PBuf,Start,Size);
+		Write_PRG( PBuf, Start, Size );
 	}
 	else
 	{	// Маски адресов и размеров
@@ -309,7 +316,7 @@ void Dendy_Write(uint8_t *PBuf, uint32_t Start, uint32_t Size)
 }
 
 // Чтение данных в буфер из картриджа в ручном режиме
-void Dendy_ManualRead(uint8_t *PBuf, uint32_t Start, uint32_t Size)
+void Dendy_ManualRead( uint8_t *PBuf, uint32_t Start, uint32_t Size )
 {	// Переменные
 	uint32_t			Delay;
 	GPIO_InitTypeDef	GPIO_InStr;
@@ -343,7 +350,7 @@ void Dendy_ManualRead(uint8_t *PBuf, uint32_t Start, uint32_t Size)
 }
 
 // Запись данных из буфера в картридж в ручном режиме
-void Dendy_ManualWrite(uint8_t *PBuf, uint32_t Start, uint32_t Size)
+void Dendy_ManualWrite( uint8_t *PBuf, uint32_t Start, uint32_t Size )
 {	// Переменные
 	uint32_t			Delay;
 	GPIO_InitTypeDef	GPIO_InStr;

@@ -5,6 +5,7 @@
 
 #include "stdint.h"
 #include "stm32f4xx.h"
+#include "utils/utils.h"
 
 // Общие назначенные пины
 #define PRG_BUS_On()	GPIOB->BSRRH = GPIO_Pin_0;		// Активируем BUSL
@@ -23,8 +24,6 @@
 #define PRG_F2_Off()	GPIOA->BSRRH = GPIO_Pin_0;		// Деактивируем PRG F2
 #define PRG_RnW_Rd()	GPIOA->BSRRL = GPIO_Pin_1;		// PRG R/W - чтение
 #define PRG_RnW_Wr()	GPIOA->BSRRH = GPIO_Pin_1;		// PRG R/W - запись
-//#define PRG_ROM_On()	GPIOA->BSRRH = GPIO_Pin_2;		// Активируем PRG ROMSEL
-//#define PRG_ROM_Off()	GPIOA->BSRRL = GPIO_Pin_2;		// Деактивируем PRG ROMSEL
 #define CHR_PRD_On()	GPIOA->BSRRH = GPIO_Pin_3;		// Активируем CHR RD
 #define CHR_PRD_Off()	GPIOA->BSRRL = GPIO_Pin_3;		// Деактивируем CHR RD
 #define CHR_PWR_On()	GPIOA->BSRRH = GPIO_Pin_4;		// Активируем CHR WR
