@@ -428,8 +428,8 @@ int main(void)
 					Sega_Read( &Data_Buf[11], AcMode, Adr, Size );
 					// Заголовок
 					Data_Buf[0] = 0x81;
-					*((uint32_t *)&Data_Buf[1]) = Adr & 0xFFFFFF;
-					*((uint16_t *)&Data_Buf[5]) = Size & 0xFFFF;
+					*( (uint32_t *) &Data_Buf[1] ) = Adr & 0xFFFFFF;
+					*( (uint16_t *) &Data_Buf[5] ) = Size & 0xFFFF;
 					// Считаем контрольку
 					CRC32 = 0xFFFFFFFF; for (Cnt = 0; Cnt < Size; Cnt++) { Calc_CRC32( Data_Buf[Cnt + 11], &CRC32 ); }
 					*( (uint32_t *) &Data_Buf[7] ) = CRC32;
@@ -463,8 +463,8 @@ int main(void)
 					Sega_Write( &Data_Buf[8], AcMode, Adr, Size );
 					// Заголовок
 					Data_Buf[0] = 0x82;
-					*((uint32_t *)&Data_Buf[1]) = Adr & 0xFFFFFF;
-					*((uint16_t *)&Data_Buf[5]) = Size & 0xFFFF;
+					*( (uint32_t *) &Data_Buf[1] ) = Adr & 0xFFFFFF;
+					*( (uint16_t *) &Data_Buf[5] ) = Size & 0xFFFF;
 					// Выдаем результат
 					USB_Write( &Data_Buf[0], 7 );
 					DendyLED = clBlack; SegaLED = clBlue;

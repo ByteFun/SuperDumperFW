@@ -59,7 +59,7 @@ USB_CDC_RXSTATUS_t UB_USB_CDC_ReceiveString(char *ptr);
 //--------------------------------------------------------------
 
 // Буфер данных приема-передачи
-uint8_t  Data_Buf[ 0x10010 ];
+uint8_t  Data_Buf[ 0x10020 ];
 uint8_t  Ans_Buf[ 0x10 ];
 
 // CallBack приема данных по USB

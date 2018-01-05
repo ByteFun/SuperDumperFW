@@ -21,7 +21,7 @@ Allocating common symbols
 Common symbol       size              file
 
 SET_TEST_MODE       0x4               ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
-Data_Buf            0x10010           ./src/usb-cdc/link.o
+Data_Buf            0x10020           ./src/usb-cdc/link.o
 Ans_Buf             0x10              ./src/usb-cdc/link.o
 usbd_cdc_OtherCfgDesc
                     0x43              ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
@@ -1931,7 +1931,7 @@ LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-
  .igot.plt      0x00000000        0x0 d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
                 0x20000550                . = ALIGN (0x4)
 
-.bss            0x20000550    0x10f68 load address 0x08006bbc
+.bss            0x20000550    0x10f78 load address 0x08006bbc
                 0x20000550                _sbss = .
                 0x20000550                __bss_start__ = _sbss
  *(.bss)
@@ -1983,34 +1983,34 @@ LOAD d:/programs/eclipse/armtoolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-
  .bss.FrameCount.7007
                 0x200005d8        0x4 ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
  *(COMMON)
- COMMON         0x200005dc    0x10618 ./src/usb-cdc/link.o
+ COMMON         0x200005dc    0x10628 ./src/usb-cdc/link.o
                 0x200005dc                Data_Buf
-                0x200105ec                Ans_Buf
-                0x200105fc                USB_CDC_STATUS
-                0x20010600                USB_OTG_dev
- COMMON         0x20010bf4        0x4 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
-                0x20010bf4                SET_TEST_MODE
- COMMON         0x20010bf8       0x32 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
-                0x20010bf8                USBD_StrDesc
- *fill*         0x20010c2a        0x2 
- COMMON         0x20010c2c      0x88c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
-                0x20010c2c                usbd_cdc_OtherCfgDesc
-                0x20010c70                USB_Rx_Buffer
-                0x20010cb0                CmdBuff
-                0x20010cb8                APP_Rx_Buffer
-                0x200114b8                . = ALIGN (0x4)
-                0x200114b8                _ebss = .
-                0x200114b8                __bss_end__ = _ebss
+                0x200105fc                Ans_Buf
+                0x2001060c                USB_CDC_STATUS
+                0x20010610                USB_OTG_dev
+ COMMON         0x20010c04        0x4 ./lib/STM32_USB_Device_Library/Core/src/usbd_core.o
+                0x20010c04                SET_TEST_MODE
+ COMMON         0x20010c08       0x32 ./lib/STM32_USB_Device_Library/Core/src/usbd_req.o
+                0x20010c08                USBD_StrDesc
+ *fill*         0x20010c3a        0x2 
+ COMMON         0x20010c3c      0x88c ./lib/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.o
+                0x20010c3c                usbd_cdc_OtherCfgDesc
+                0x20010c80                USB_Rx_Buffer
+                0x20010cc0                CmdBuff
+                0x20010cc8                APP_Rx_Buffer
+                0x200114c8                . = ALIGN (0x4)
+                0x200114c8                _ebss = .
+                0x200114c8                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200114b8      0x400 load address 0x08017b24
-                0x200114b8                . = ALIGN (0x4)
-                0x200114b8                PROVIDE (end, .)
-                0x200114b8                PROVIDE (_end, .)
-                0x200114b8                . = (. + _Min_Heap_Size)
-                0x200118b8                . = (. + _Min_Stack_Size)
- *fill*         0x200114b8      0x400 
-                0x200118b8                . = ALIGN (0x4)
+                0x200114c8      0x400 load address 0x08017b34
+                0x200114c8                . = ALIGN (0x4)
+                0x200114c8                PROVIDE (end, .)
+                0x200114c8                PROVIDE (_end, .)
+                0x200114c8                . = (. + _Min_Heap_Size)
+                0x200118c8                . = (. + _Min_Stack_Size)
+ *fill*         0x200114c8      0x400 
+                0x200118c8                . = ALIGN (0x4)
 
 .memory_b1_text
  *(.mb1text)
